@@ -4,6 +4,7 @@ export enum DefaultSigns {
   Equals = "==",
   Increase = "++",
   Minus = "-",
+  Multiply = "*",
   Plus = "+",
   Pow = "**",
   Root = "^"
