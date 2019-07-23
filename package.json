@@ -1,5 +1,5 @@
 {
-  "name": "typescript-node-lib",
+  "name": "fttp",
   "version": "0.0.0",
   "licence": "MIT",
   "author": {
@@ -7,7 +7,7 @@
     "email": "email@domain.com"
   },
   "main": "dist/index.js",
-  "description": "your typescript library description",
+  "description": "Creating static types with functional programming",
   "keywords": [
     "typescript"
   ],
@@ -56,5 +56,8 @@
     "standard-changelog": "^2.0.11",
     "ts-jest": "^24.0.2",
     "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "tiinvo": "^1.0.0"
   }
 }

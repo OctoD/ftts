@@ -1,7 +1,7 @@
-typescript library template
-===========================
+ftts
+====
 
-Your library description
+Creating static types with functional programming
 
 # Features 🎉
 
