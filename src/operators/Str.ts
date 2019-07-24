@@ -1,5 +1,5 @@
-import { create, store, Operator } from "../operator";
-import { Str } from "../primitives";
+import { create, Operator, store } from "../operator";
+import { str } from "../primitives";
 import { DefaultSigns } from "./DefaultSigns";
 
 export interface StrOperators {
@@ -11,15 +11,13 @@ export interface StrOperators {
 export const StrOperators = <StrOperators>{};
 
 StrOperators.concat = store(
-  create(DefaultSigns.Plus, Str(), Str(), (a, b) => a.value() + b.value())
+  create(DefaultSigns.Plus, str, str, (a, b) => a.value() + b.value())
 );
 
 StrOperators.repeat = store(
-  create(DefaultSigns.Pow, Str(), Str(), (a, b) => a.value() + b.value())
+  create(DefaultSigns.Pow, str, str, (a, b) => a.value() + b.value())
 );
 
 StrOperators.split = store(
-  create(DefaultSigns.Divide, Str(), Str(), (a, b) =>
-    a.value().split(b.value())
-  )
+  create(DefaultSigns.Divide, str, str, (a, b) => a.value().split(b.value()))
 );

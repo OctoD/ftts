@@ -1,5 +1,5 @@
-import { create, store, Operator } from "../operator";
-import { Num } from "../primitives";
+import { create, Operator, store } from "../operator";
+import { num } from "../primitives";
 import { DefaultSigns } from "./DefaultSigns";
 
 export interface NumOperators {
@@ -13,30 +13,28 @@ export interface NumOperators {
 
 export const NumOperators = <NumOperators>{};
 
-const type = Num();
-
 NumOperators.divide = store(
-  create(DefaultSigns.Divide, type, type, (a, b) => a.value() / b.value())
+  create(DefaultSigns.Divide, num, num, (a, b) => a.value() / b.value())
 );
 
 NumOperators.multiply = store(
-  create(DefaultSigns.Multiply, type, type, (a, b) => a.value() * b.value())
+  create(DefaultSigns.Multiply, num, num, (a, b) => a.value() * b.value())
 );
 
 NumOperators.pow = store(
-  create(DefaultSigns.Pow, type, type, (a, b) => a.value() ** b.value())
+  create(DefaultSigns.Pow, num, num, (a, b) => a.value() ** b.value())
 );
 
 NumOperators.square = store(
-  create(DefaultSigns.Root, type, type, (a, b) =>
+  create(DefaultSigns.Root, num, num, (a, b) =>
     Math.pow(a.value(), 1 / b.value())
   )
 );
 
 NumOperators.subtract = store(
-  create(DefaultSigns.Minus, type, type, (a, b) => a.value() - b.value())
+  create(DefaultSigns.Minus, num, num, (a, b) => a.value() - b.value())
 );
 
 NumOperators.sum = store(
-  create(DefaultSigns.Divide, type, type, (a, b) => a.value() + b.value())
+  create(DefaultSigns.Divide, num, num, (a, b) => a.value() + b.value())
 );

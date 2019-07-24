@@ -1,15 +1,18 @@
 import { create, Type } from "./type";
 
-export type Any<T = null> = Type<T>;
+export type Any<T = any> = Type<T>;
 export type Bool = Type<boolean>;
-export type Fn = Type<(...args: any[]) => any>;
+export type Fn<
+  T extends (...args: any[]) => any = (...args: any[]) => any
+> = Type<T>;
 export type Obj = Type<object>;
 export type Null = Type<null>;
+export type Nullable<T> = Type<T | null>;
 export type Num = Type<number>;
 export type Str = Type<string>;
 export type Undefined = Type<undefined>;
 
-export function Any<T = null>(value: T = null as any): Type<T> {
+export function Any<T = any>(value: T = null as any): Type<T> {
   return create("any", value);
 }
 
@@ -57,3 +60,12 @@ export function Str(value: string = ""): Type<string> {
 export function Undefined(): Type<undefined> {
   return create("undefined", undefined, value => value === undefined);
 }
+
+export const any = Any();
+export const bool = Bool();
+export const fn = Fn(() => void 0);
+export const nil = Null();
+export const num = Num();
+export const obj = Obj();
+export const str = Str();
+export const und = Undefined();

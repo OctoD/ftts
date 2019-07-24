@@ -3,6 +3,7 @@ export type TypeChecker<Value> = (arg: Value) => boolean;
 export interface Type<Value> {
   check(value: unknown): boolean;
   checker(): TypeChecker<unknown>;
+  id(): string;
   type(): string;
   value(): Value;
 }
@@ -12,7 +13,8 @@ const automaticCheck = () => true;
 export function create<Value>(
   typename: string,
   typevalue: Value,
-  typechecker: TypeChecker<unknown> = automaticCheck
+  typechecker: TypeChecker<unknown> = automaticCheck,
+  id: string = Math.floor(Math.random() * Date.now() * 0xffffff).toString(12)
 ): Type<Value> {
   throwIfUnacceptable(typename, typevalue, typechecker);
 
@@ -22,6 +24,9 @@ export function create<Value>(
     },
     check(value) {
       return typechecker(value);
+    },
+    id() {
+      return id;
     },
     type() {
       return typename;
@@ -39,13 +44,17 @@ export function equals<T>(
   return type.type() === equalsTo.type();
 }
 
+export function same(left: Type<any>, right: Type<any>): left is typeof right {
+  return left.id() === right.id() && left.type() === right.type();
+}
+
 export function update<T>(type: Type<T>, typevalue: T): Type<T> | never {
   const typename = type.type();
   const typechecker = type.checker();
 
   throwIfUnacceptable(typename, typevalue, typechecker);
 
-  return create(type.type(), typevalue, type.checker());
+  return create(type.type(), typevalue, type.checker(), type.id());
 }
 
 function throwIfUnacceptable(
