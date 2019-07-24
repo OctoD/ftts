@@ -1,6 +1,6 @@
 import { Type, equals } from "./type";
 
-export type OperatorFn<A, B> = (left: Type<A>, right: Type<B>) => unknown;
+export type OperatorFn<A, B> = (left: Type<A>, right: Type<B>) => any;
 export type OperationDirection = "left" | "right";
 export type OperationSign = string;
 

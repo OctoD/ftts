@@ -4,7 +4,7 @@ import { any, nil, Nullable } from "../primitives";
 import { DefaultSigns } from "./DefaultSigns";
 
 interface NullOperators {
-  coalesce: Operator<any, null>;
+  coalesce: Operator<any | null, any>;
   toNullable: Operator<any, null>;
 }
 
