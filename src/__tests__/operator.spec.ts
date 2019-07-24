@@ -58,4 +58,15 @@ describe(`operators`, () => {
       operators.apply(op, Obj() as any, Bool() as any)
     ).toThrowError();
   });
+
+  it("can operate between two types if the operator exists", () => {
+    expect(() =>
+      operators.operate(Num(10), "==", Str("1234567890"))
+    ).not.toThrowError();
+    expect(() =>
+      operators.operate(Num(10), "+=", Str("1234567890"))
+    ).toThrowError();
+
+    expect(operators.operate(Num(10), "==", Str("1234567890"))).toBeTruthy();
+  });
 });

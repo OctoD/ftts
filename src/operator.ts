@@ -58,6 +58,25 @@ export function get<T, U>(
   return operatorsDictionary.get(createOperatorName(sign, left, right));
 }
 
+export function operate<Return>(
+  left: Type<any>,
+  sign: OperationSign,
+  right: Type<any>
+): Return | never {
+  const name = createOperatorName(sign, left, right);
+
+  if (operatorsDictionary.has(name)) {
+    return (operatorsDictionary.get(name)!.get()(
+      left,
+      right
+    ) as unknown) as Return;
+  }
+
+  throw new SyntaxError(
+    `Cannot operate between ${left.type()} and ${right.type()} with sign ${sign}`
+  );
+}
+
 export function override<T, U>(operator: Operator<T, U>): boolean {
   operatorsDictionary.set(operator.name(), operator);
   return true;
