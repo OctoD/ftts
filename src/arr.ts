@@ -160,6 +160,13 @@ export function indexOf<T extends Type<U>, U, K>(
   return Num(-1);
 }
 
+export function join<T extends Type<U>, U>(
+  arr: Arr<T>,
+  delimiter: Str = Str(",")
+): Str {
+  return Str(arr.value().join(delimiter.value()));
+}
+
 export function map<T extends Type<U>, U, K extends Type<Y>, Y>(
   arr: Arr<T>,
   fn: Fn<IterableCallback<Arr<K>>>
