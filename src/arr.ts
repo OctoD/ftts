@@ -15,6 +15,10 @@ import {
 } from "./primitives";
 
 export type Arr<T extends Type<any>> = Type<T[]>;
+export type BoolArr = Arr<Bool>;
+export type ObjArr = Arr<Obj>;
+export type NumArr = Arr<Num>;
+export type StrArr = Arr<Str>;
 
 //#region internals
 
@@ -47,6 +51,12 @@ function mapToType<T>(
 }
 
 //#endregion
+
+export const arr = Arr();
+export const boolarr = BoolArr();
+export const objarr = ObjArr();
+export const numarr = NumArr();
+export const strarr = StrArr();
 
 export function Arr(value: any[] = []): Arr<Any> {
   return create("AnyArray", value.map(mapToType(Any())), ensureArrayAnd());
