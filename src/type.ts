@@ -1,3 +1,4 @@
+export type TypeBuilder<T> = (arg?: T) => Type<T>;
 export type TypeChecker<Value> = (arg: Value) => boolean;
 
 export interface Type<Value> {
