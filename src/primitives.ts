@@ -17,7 +17,7 @@ export function Any<T = any>(value: T = null as any): Type<T> {
 }
 
 export function Bool(value: boolean = true): Type<boolean> {
-  return create("boolean", value, value => value === true || value === false);
+  return create("boolean", value, value => typeof value === "boolean");
 }
 
 export function Fn<Fn extends (...args: any[]) => any>(value: Fn): Type<Fn> {
