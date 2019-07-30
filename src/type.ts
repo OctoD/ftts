@@ -44,6 +44,24 @@ export function equals<T>(
   return type.type() === equalsTo.type();
 }
 
+export function isType(value: unknown): value is Type<unknown> {
+  if (typeof value !== "object") {
+    return false;
+  }
+
+  if (value === null) {
+    return false;
+  }
+
+  return (
+    typeof (<any>value)["check"] === "function" &&
+    typeof (<any>value)["checker"] === "function" &&
+    typeof (<any>value)["id"] === "function" &&
+    typeof (<any>value)["type"] === "function" &&
+    typeof (<any>value)["value"] === "function"
+  );
+}
+
 export function same(left: Type<any>, right: Type<any>): left is typeof right {
   return left.id() === right.id() && left.type() === right.type();
 }
