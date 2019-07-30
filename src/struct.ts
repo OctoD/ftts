@@ -1,7 +1,7 @@
-import { TryCatch } from "tiinvo";
+import { TryCatch, Ok } from "tiinvo";
 import { StrArr } from "./arr";
 import { Obj, Str } from "./primitives";
-import { create as tcreate, equals, isType, Type } from "./type";
+import * as type from "./type";
 
 /**
  *
@@ -10,7 +10,7 @@ import { create as tcreate, equals, isType, Type } from "./type";
  * @interface StructData
  */
 export interface StructDataType {
-  [index: string]: Type<unknown>;
+  [index: string]: type.Type<unknown>;
 }
 
 /**
@@ -18,10 +18,10 @@ export interface StructDataType {
  *
  * @export
  * @interface Struct
- * @extends {Type<T>}
+ * @extends {type.Type<T>}
  * @template T
  */
-export interface Struct<T extends StructDataType> extends Type<T> {}
+export interface Struct<T extends StructDataType> extends type.Type<T> {}
 
 /**
  *
@@ -32,7 +32,9 @@ export interface Struct<T extends StructDataType> extends Type<T> {}
  * @returns {Struct<T>}
  */
 export function create<T extends StructDataType>(initialStruct: T): Struct<T> {
-  const struct = <Struct<T>>tcreate("struct", initialStruct, isStructLikeData);
+  const struct = <Struct<T>>(
+    type.create("struct", initialStruct, isStructLikeData)
+  );
 
   return struct;
 }
@@ -86,7 +88,7 @@ export function hasKey<T extends StructDataType>(
  * @returns {maybeType is StructDataType}
  */
 export function isStruct(maybeType: unknown): maybeType is StructDataType {
-  return isType(maybeType) && isStructLikeData(maybeType.value());
+  return type.isType(maybeType) && isStructLikeData(maybeType.value());
 }
 
 /**
@@ -107,11 +109,11 @@ export function keys<T extends StructDataType>(struct: Struct<T>): StrArr {
  * @export
  * @template T
  * @param {Struct<T>} struct
- * @returns {Array<Type<unknown>>}
+ * @returns {Array<type.Type<unknown>>}
  */
 export function values<T extends StructDataType>(
   struct: Struct<T>
-): Array<Type<unknown>> {
+): Array<type.Type<unknown>> {
   const value = struct.value();
   return dataKeys(value).map(key => value[key]);
 }
@@ -130,11 +132,11 @@ function checkKeys<T extends StructDataType>(
   keys: string[],
   index: number
 ): boolean {
-  if (index > keys.length) {
+  if (index >= keys.length) {
     return true;
   }
 
-  return isType(struct[keys[index]])
+  return type.isType(struct[keys[index]])
     ? checkKeys(struct, keys, index + 1)
     : false;
 }
@@ -154,14 +156,14 @@ function compareKeys(
   keys: string[],
   index: number
 ): boolean {
-  if (keys.length > index) {
+  if (index >= keys.length) {
     return true;
   }
 
   const t = comparing[keys[index]];
   const tto = comparingTo[keys[index]];
 
-  return t && tto && equals(t, tto)
+  return t && tto && type.equals(t, tto)
     ? compareKeys(comparing, comparingTo, keys, index + 1)
     : false;
 }
@@ -186,6 +188,8 @@ function dataKeys<T extends StructDataType>(struct: T): string[] {
 function isStructLikeData(value: unknown): boolean {
   return TryCatch(Obj, value as any).mapOrElse(
     () => false,
-    (obj: any) => checkKeys(obj, dataKeys(obj), 0)
+    (obj: Obj) => {
+      return checkKeys(obj.value() as any, dataKeys(obj.value() as any), 0);
+    }
   );
 }

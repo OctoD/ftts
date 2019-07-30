@@ -10,15 +10,19 @@ describe(`Struct`, () => {
         b: num
       })
     ).not.toThrowError();
+
+    expect(() => struct.create(100 as any)).toThrowError();
   });
 
   test(`equalsTo`, () => {
     const s1 = struct.create({ foo: num });
     const s2 = struct.create({ foo: num });
     const s3 = struct.create({ foo: num, bar: str });
+    const s4 = struct.create({ foo: num, bar: num });
 
     expect(struct.equalsTo(s1, s2)).toBeTruthy();
     expect(struct.equalsTo(s1, s3)).toBeFalsy();
+    expect(struct.equalsTo(s3, s4)).toBeFalsy();
   });
 
   test("hasKey", () => {
@@ -32,7 +36,12 @@ describe(`Struct`, () => {
     const keys = StrArr(["foo", "bar", "baz"]);
     const s1 = struct.create({ foo: str, bar: str, baz: str });
 
-    expect(struct.keys(s1)).toStrictEqual(keys);
+    expect(
+      struct
+        .keys(s1)
+        .value()
+        .map(a => a.value())
+    ).toStrictEqual(keys.value().map(a => a.value()));
   });
 
   test("values", () => {
