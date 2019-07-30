@@ -1,4 +1,4 @@
-import { Type, create, update, same } from "./type";
+import { Type, create, update, same, equals } from "./type";
 import {
   Bool,
   Obj,
@@ -31,17 +31,21 @@ function ensureArrayAnd(
 }
 
 function ensureAllOfType<U>(type: Type<U>): (arg: unknown[]) => boolean {
-  const check = (
-    args: unknown[],
-    index: number,
-    inferred: Type<U>
-  ): boolean => {
-    return inferred.check(args[index])
-      ? check(args, index + 1, inferred)
-      : false;
-  };
+  return args => ensureOfType(type, args, 0);
+}
 
-  return args => check(args, 0, type);
+function ensureOfType<U>(
+  type: Type<U>,
+  args: unknown[],
+  index: number
+): boolean {
+  if (index >= args.length) {
+    return true;
+  }
+
+  return equals(type, args[index] as any)
+    ? ensureOfType(type, args, index + 1)
+    : false;
 }
 
 function mapToType<T>(
