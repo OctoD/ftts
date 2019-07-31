@@ -20,8 +20,6 @@ export function create<Value>(
   id: string = Math.floor(Math.random() * Date.now() * 0xffffff).toString(12),
   decorators: TypeDecorator[] = []
 ): Type<Value> {
-  throwIfUnacceptable(typename, typevalue, typechecker);
-
   let t = {
     checker() {
       return typechecker;
@@ -46,6 +44,8 @@ export function create<Value>(
   for (let i = 0; i < decorators.length; i++) {
     t = decorators[i](t);
   }
+
+  throwIfUnacceptable(t.type(), t.value(), t.checker());
 
   return t;
 }

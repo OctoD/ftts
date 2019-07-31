@@ -4,20 +4,18 @@ export interface Trait<T = unknown> {
   [index: string]: (this: Type<T>, ...args: any[]) => any;
 }
 
-export type TraitImplemented<T extends Type<K>, U extends Trait<K>, K> = T & U;
-
 export type TraitInvokable<T extends Type<K>, U extends Trait<K>, K> = (
   arg: K
-) => TraitImplemented<T, U, K>;
+) => T & U;
 
-export function impl<T extends Type<K>, U extends Trait<K>, K>(
-  type: T,
+export function impl<T, U extends Trait<T>>(
+  type: Type<T>,
   trait: U
-): TraitInvokable<T, U, K> {
+): TraitInvokable<typeof type, U, T> {
   return arg =>
     create(type.type(), arg, type.checker(), type.id(), [
       t => Object.assign(t, trait)
-    ]) as TraitImplemented<T, U, K>;
+    ]) as typeof type & U;
 }
 
 export function trait<T extends Trait<U>, U>(trait: T): T {
