@@ -6,6 +6,7 @@ export enum DefaultSigns {
   Increase = "++",
   Minus = "-",
   Multiply = "*",
+  NotEqual = "=!",
   Plus = "+",
   Pow = "**",
   QuestionMark = "?",
