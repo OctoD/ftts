@@ -188,8 +188,6 @@ function dataKeys<T extends StructDataType>(struct: T): string[] {
 function isStructLikeData(value: unknown): boolean {
   return TryCatch(Obj, value as any).mapOrElse(
     () => false,
-    (obj: Obj) => {
-      return checkKeys(obj.value() as any, dataKeys(obj.value() as any), 0);
-    }
+    (obj: Obj) => checkKeys(obj.value() as any, dataKeys(obj.value() as any), 0)
   );
 }

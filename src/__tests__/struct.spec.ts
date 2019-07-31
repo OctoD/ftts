@@ -1,6 +1,7 @@
 import { num, str, Str, Num } from "../primitives";
 import * as struct from "../struct";
 import { StrArr } from "../arr";
+import { type } from "..";
 
 describe(`Struct`, () => {
   test("create", () => {
@@ -30,6 +31,16 @@ describe(`Struct`, () => {
 
     expect(struct.hasKey(s1, Str("foo"))).toBeTruthy();
     expect(struct.hasKey(s1, Str("bar"))).toBeFalsy();
+  });
+
+  test("isStruct", () => {
+    const s1 = struct.create({ foo: num });
+    const s2 = struct.create({ foo: num, bar: str, baz: str });
+    const t1 = type.create("foo", "bar");
+
+    expect(struct.isStruct(s1)).toBeTruthy();
+    expect(struct.isStruct(s2)).toBeTruthy();
+    expect(struct.isStruct(t1)).toBeFalsy();
   });
 
   test("keys", () => {

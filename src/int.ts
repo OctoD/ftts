@@ -1,5 +1,5 @@
 import { num } from "./primitives";
-import { impl, trait } from "./trait";
+import { impl, create } from "./trait";
 
 export const INT8_MIN = -128;
 export const INT8_MAX = 127;
@@ -28,7 +28,7 @@ function createIntValidator(min: number, max: number, signed: boolean) {
     return value >= min && value <= max;
   }
 
-  return trait({
+  return create({
     check(value: unknown) {
       return checker(value);
     },
@@ -41,16 +41,20 @@ function createIntValidator(min: number, max: number, signed: boolean) {
   });
 }
 
-export const int8Trait = trait(createIntValidator(INT8_MIN, INT8_MAX, true));
-export const int16Trait = trait(createIntValidator(INT16_MIN, INT16_MAX, true));
-export const int32Trait = trait(createIntValidator(INT32_MIN, INT32_MAX, true));
-export const uint8Trait = trait(
+export const int8Trait = create(createIntValidator(INT8_MIN, INT8_MAX, true));
+export const int16Trait = create(
+  createIntValidator(INT16_MIN, INT16_MAX, true)
+);
+export const int32Trait = create(
+  createIntValidator(INT32_MIN, INT32_MAX, true)
+);
+export const uint8Trait = create(
   createIntValidator(UINT8_MIN, UINT8_MAX, false)
 );
-export const uint16Trait = trait(
+export const uint16Trait = create(
   createIntValidator(UINT16_MIN, UINT16_MAX, false)
 );
-export const uint32Trait = trait(
+export const uint32Trait = create(
   createIntValidator(UINT32_MIN, UINT32_MAX, false)
 );
 

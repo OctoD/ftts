@@ -1,9 +1,9 @@
-import { trait, impl } from "../trait";
+import { create, impl } from "../trait";
 import { num, Num } from "../primitives";
 
 describe(`trait`, () => {
   test("trait", () => {
-    const t = trait({
+    const t = create({
       foo: jest.fn()
     });
 
@@ -14,7 +14,7 @@ describe(`trait`, () => {
   });
 
   test("impl", () => {
-    const t = trait({
+    const t = create({
       even() {
         return Num(this.value() as number).value() % 2 === 0;
       },
