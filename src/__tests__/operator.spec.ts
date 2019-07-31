@@ -7,7 +7,7 @@ describe(`operators`, () => {
       return a.value().repeat(b.value());
     });
 
-    expect(op.name()).toBe([Str().type(), Num().type()].join("**"));
+    expect(op.name()).toBe([Str().name(), Num().name()].join("**"));
     expect(operators.apply(op, Str("a"), Num(10))).toEqual("a".repeat(10));
   });
 

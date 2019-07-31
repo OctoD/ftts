@@ -37,7 +37,7 @@ export function Null(): Type<null> {
 }
 
 export function Nullable<U>(type: Type<U>): Type<U | null> {
-  const name = ["null", type.type()].join(".");
+  const name = ["null", type.name()].join(".");
   return create(
     name,
     type.value(),

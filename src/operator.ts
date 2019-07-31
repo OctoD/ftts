@@ -73,7 +73,7 @@ export function operate<Return>(
   }
 
   throw new SyntaxError(
-    `Cannot operate between ${left.type()} and ${right.type()} with sign ${sign}`
+    `Cannot operate between ${left.name()} and ${right.name()} with sign ${sign}`
   );
 }
 
@@ -99,8 +99,8 @@ function createOperatorName(
   leftType: Type<any>,
   rightType: Type<any>
 ): string {
-  const left = leftType.type();
-  const right = rightType.type();
+  const left = leftType.name();
+  const right = rightType.name();
   const chunks = left > right ? [left, right] : [right, left];
 
   return chunks.join(sign);
@@ -113,7 +113,7 @@ function throwIfUnacceptable<U>(
 ): void | never {
   if (!equals(operatorType, type)) {
     throw new TypeError(
-      `Invalid ${direction} operand, expected ${operatorType.type()}, given ${type.type()}`
+      `Invalid ${direction} operand, expected ${operatorType.name()}, given ${type.name()}`
     );
   }
 }

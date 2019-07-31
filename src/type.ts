@@ -7,7 +7,7 @@ export interface Type<Value> {
   checker(): TypeChecker<unknown>;
   decorators(): TypeDecorator[];
   id(): string;
-  type(): string;
+  name(): string;
   value(): Value;
 }
 
@@ -33,7 +33,7 @@ export function create<Value>(
     id() {
       return id;
     },
-    type() {
+    name() {
       return typename;
     },
     value() {
@@ -45,7 +45,7 @@ export function create<Value>(
     t = decorators[i](t);
   }
 
-  throwIfUnacceptable(t.type(), t.value(), t.checker());
+  throwIfUnacceptable(t.name(), t.value(), t.checker());
 
   return t;
 }
@@ -54,7 +54,7 @@ export function equals<T>(
   type: Type<T>,
   equalsTo: Type<unknown>
 ): equalsTo is Type<T> {
-  return type.type() === equalsTo.type();
+  return type.name() === equalsTo.name();
 }
 
 export function isType(value: unknown): value is Type<unknown> {
@@ -67,26 +67,27 @@ export function isType(value: unknown): value is Type<unknown> {
   }
 
   return (
-    typeof (<any>value)["check"] === "function" &&
-    typeof (<any>value)["checker"] === "function" &&
-    typeof (<any>value)["id"] === "function" &&
-    typeof (<any>value)["type"] === "function" &&
-    typeof (<any>value)["value"] === "function"
+    typeof (<Type<any>>value).check === "function" &&
+    typeof (<Type<any>>value).checker === "function" &&
+    typeof (<Type<any>>value).decorators === "function" &&
+    typeof (<Type<any>>value).id === "function" &&
+    typeof (<Type<any>>value).name === "function" &&
+    typeof (<Type<any>>value).value === "function"
   );
 }
 
 export function same(left: Type<any>, right: Type<any>): left is typeof right {
-  return left.id() === right.id() && left.type() === right.type();
+  return left.id() === right.id() && left.name() === right.name();
 }
 
 export function update<T>(type: Type<T>, typevalue: T): Type<T> | never {
-  const typename = type.type();
+  const typename = type.name();
   const typechecker = type.checker();
 
   throwIfUnacceptable(typename, typevalue, typechecker);
 
   return create(
-    type.type(),
+    type.name(),
     typevalue,
     type.checker(),
     type.id(),

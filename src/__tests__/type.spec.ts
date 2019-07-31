@@ -4,7 +4,7 @@ describe(`type`, () => {
   it(`creates a new type`, () => {
     const t = type.create("foo", "bar");
 
-    expect(t.type()).toBe("foo");
+    expect(t.name()).toBe("foo");
     expect(t.value()).toBe("bar");
   });
 
@@ -18,7 +18,7 @@ describe(`type`, () => {
   it(`can update type without mutating the previous one`, () => {
     const t = type.create("bar", 123, a => typeof a === "number");
 
-    expect(t.type()).toBe("bar");
+    expect(t.name()).toBe("bar");
     expect(() => type.update(t, "100" as any)).toThrowError();
 
     const t2 = type.update(t, 100);

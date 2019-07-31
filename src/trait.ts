@@ -21,7 +21,7 @@ export function impl<T, U extends Trait<T>>(
   trait: U
 ): TraitInvokable<typeof type, U, T> {
   return arg =>
-    tcreate(type.type(), arg, type.checker(), type.id(), [
+    tcreate(type.name(), arg, type.checker(), type.id(), [
       t => Object.assign(t, trait)
     ]) as typeof type & U;
 }
