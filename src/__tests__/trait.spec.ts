@@ -7,19 +7,22 @@ describe(`trait`, () => {
       foo: jest.fn()
     });
 
-    expect(t.value()).toHaveProperty("foo");
+    t.foo();
+
+    expect(t).toHaveProperty("foo");
+    expect(t.foo).toHaveBeenCalled();
   });
 
   test("impl", () => {
     const t = trait({
       even() {
-        return this.value() % 2 === 0;
+        return Num(this.value() as number).value() % 2 === 0;
       },
       odd() {
-        return this.value() % 2 !== 0;
+        return Num(this.value() as number).value() % 2 !== 0;
       }
     });
-    const i = impl(Num, t);
+    const i = impl(num, t);
 
     expect(i(10)).toHaveProperty("even");
     expect(i(20)).toHaveProperty("odd");

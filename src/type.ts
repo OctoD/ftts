@@ -1,9 +1,11 @@
 export type TypeBuilder<T> = (arg?: T) => Type<T>;
 export type TypeChecker<Value> = (arg: Value) => boolean;
+export type TypeDecorator = <T>(type: Type<T>) => Type<T>;
 
 export interface Type<Value> {
   check(value: unknown): boolean;
   checker(): TypeChecker<unknown>;
+  decorators(): TypeDecorator[];
   id(): string;
   type(): string;
   value(): Value;
@@ -15,16 +17,20 @@ export function create<Value>(
   typename: string,
   typevalue: Value,
   typechecker: TypeChecker<unknown> = automaticCheck,
-  id: string = Math.floor(Math.random() * Date.now() * 0xffffff).toString(12)
+  id: string = Math.floor(Math.random() * Date.now() * 0xffffff).toString(12),
+  decorators: TypeDecorator[] = []
 ): Type<Value> {
   throwIfUnacceptable(typename, typevalue, typechecker);
 
-  return {
+  let t = {
     checker() {
       return typechecker;
     },
-    check(value) {
+    check(value: Value) {
       return typechecker(value);
+    },
+    decorators() {
+      return decorators;
     },
     id() {
       return id;
@@ -36,6 +42,12 @@ export function create<Value>(
       return typevalue;
     }
   };
+
+  for (let i = 0; i < decorators.length; i++) {
+    t = decorators[i](t);
+  }
+
+  return t;
 }
 
 export function equals<T>(
@@ -73,7 +85,13 @@ export function update<T>(type: Type<T>, typevalue: T): Type<T> | never {
 
   throwIfUnacceptable(typename, typevalue, typechecker);
 
-  return create(type.type(), typevalue, type.checker(), type.id());
+  return create(
+    type.type(),
+    typevalue,
+    type.checker(),
+    type.id(),
+    type.decorators()
+  );
 }
 
 function throwIfUnacceptable(
