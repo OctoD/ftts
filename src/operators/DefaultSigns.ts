@@ -1,4 +1,8 @@
 export enum DefaultSigns {
+  And = "&&",
+  Assign = "=",
+  AssignDecrease = "-=",
+  AssignIncrease = "+=",
   Decrease = "--",
   Divide = "/",
   DoubleQuestionMark = "??",
@@ -9,6 +13,7 @@ export enum DefaultSigns {
   NotEqual = "=!",
   Plus = "+",
   Pow = "**",
+  Or = "||",
   QuestionMark = "?",
   Root = "^"
 }
