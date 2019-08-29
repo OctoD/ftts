@@ -20,4 +20,4 @@
 
 • **NumOperators**: *[NumOperators](../interfaces/_operators_num_.numoperators.md)* =  <NumOperators>{}
 
-*Defined in [operators/Num.ts:14](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/Num.ts#L14)*
+*Defined in [operators/Num.ts:14](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/Num.ts#L14)*

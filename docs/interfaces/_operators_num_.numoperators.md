@@ -25,7 +25,7 @@
 
 • **divide**: *[Operator](_operator_.operator.md)‹number, number›*
 
-*Defined in [operators/Num.ts:6](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/Num.ts#L6)*
+*Defined in [operators/Num.ts:6](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/Num.ts#L6)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **multiply**: *[Operator](_operator_.operator.md)‹number, number›*
 
-*Defined in [operators/Num.ts:7](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/Num.ts#L7)*
+*Defined in [operators/Num.ts:7](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/Num.ts#L7)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **pow**: *[Operator](_operator_.operator.md)‹number, number›*
 
-*Defined in [operators/Num.ts:8](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/Num.ts#L8)*
+*Defined in [operators/Num.ts:8](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/Num.ts#L8)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 • **square**: *[Operator](_operator_.operator.md)‹number, number›*
 
-*Defined in [operators/Num.ts:9](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/Num.ts#L9)*
+*Defined in [operators/Num.ts:9](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/Num.ts#L9)*
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 • **subtract**: *[Operator](_operator_.operator.md)‹number, number›*
 
-*Defined in [operators/Num.ts:10](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/Num.ts#L10)*
+*Defined in [operators/Num.ts:10](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/Num.ts#L10)*
 
 ___
 
@@ -65,4 +65,4 @@ ___
 
 • **sum**: *[Operator](_operator_.operator.md)‹number, number›*
 
-*Defined in [operators/Num.ts:11](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/Num.ts#L11)*
+*Defined in [operators/Num.ts:11](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/Num.ts#L11)*

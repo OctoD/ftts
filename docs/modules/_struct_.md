@@ -30,7 +30,7 @@
 
 ▸ **checkKeys**<**T**>(`struct`: T, `keys`: string[], `index`: number): *boolean*
 
-*Defined in [struct.ts:130](https://github.com/OctoD/ftts/blob/73fcc67/src/struct.ts#L130)*
+*Defined in [struct.ts:130](https://github.com/OctoD/ftts/blob/b8036e1/src/struct.ts#L130)*
 
 **`template`** T
 
@@ -54,7 +54,7 @@ ___
 
 ▸ **compareKeys**(`comparing`: [StructDataType](../interfaces/_struct_.structdatatype.md), `comparingTo`: [StructDataType](../interfaces/_struct_.structdatatype.md), `keys`: string[], `index`: number): *boolean*
 
-*Defined in [struct.ts:153](https://github.com/OctoD/ftts/blob/73fcc67/src/struct.ts#L153)*
+*Defined in [struct.ts:153](https://github.com/OctoD/ftts/blob/b8036e1/src/struct.ts#L153)*
 
 **Parameters:**
 
@@ -73,7 +73,7 @@ ___
 
 ▸ **create**<**T**>(`initialStruct`: T): *[Struct](../interfaces/_struct_.struct.md)‹T›*
 
-*Defined in [struct.ts:34](https://github.com/OctoD/ftts/blob/73fcc67/src/struct.ts#L34)*
+*Defined in [struct.ts:34](https://github.com/OctoD/ftts/blob/b8036e1/src/struct.ts#L34)*
 
 **`export`** 
 
@@ -97,7 +97,7 @@ ___
 
 ▸ **dataKeys**<**T**>(`struct`: T): *string[]*
 
-*Defined in [struct.ts:178](https://github.com/OctoD/ftts/blob/73fcc67/src/struct.ts#L178)*
+*Defined in [struct.ts:178](https://github.com/OctoD/ftts/blob/b8036e1/src/struct.ts#L178)*
 
 **`template`** T
 
@@ -119,7 +119,7 @@ ___
 
 ▸ **equalsTo**<**T**, **U**>(`leftStruct`: [Struct](../interfaces/_struct_.struct.md)‹T›, `rightStruct`: [Struct](../interfaces/_struct_.struct.md)‹U›): *boolean*
 
-*Defined in [struct.ts:52](https://github.com/OctoD/ftts/blob/73fcc67/src/struct.ts#L52)*
+*Defined in [struct.ts:52](https://github.com/OctoD/ftts/blob/b8036e1/src/struct.ts#L52)*
 
 **`export`** 
 
@@ -148,7 +148,7 @@ ___
 
 ▸ **hasKey**<**T**>(`struct`: [Struct](../interfaces/_struct_.struct.md)‹T›, `key`: [Str](_primitives_.md#str)): *boolean*
 
-*Defined in [struct.ts:76](https://github.com/OctoD/ftts/blob/73fcc67/src/struct.ts#L76)*
+*Defined in [struct.ts:76](https://github.com/OctoD/ftts/blob/b8036e1/src/struct.ts#L76)*
 
 **`export`** 
 
@@ -173,7 +173,7 @@ ___
 
 ▸ **isStruct**(`maybeType`: unknown): *boolean*
 
-*Defined in [struct.ts:90](https://github.com/OctoD/ftts/blob/73fcc67/src/struct.ts#L90)*
+*Defined in [struct.ts:90](https://github.com/OctoD/ftts/blob/b8036e1/src/struct.ts#L90)*
 
 **`export`** 
 
@@ -191,7 +191,7 @@ ___
 
 ▸ **isStructLikeData**(`value`: unknown): *boolean*
 
-*Defined in [struct.ts:188](https://github.com/OctoD/ftts/blob/73fcc67/src/struct.ts#L188)*
+*Defined in [struct.ts:188](https://github.com/OctoD/ftts/blob/b8036e1/src/struct.ts#L188)*
 
 **Parameters:**
 
@@ -207,7 +207,7 @@ ___
 
 ▸ **keys**<**T**>(`struct`: [Struct](../interfaces/_struct_.struct.md)‹T›): *[StrArr](_arr_.md#strarr)*
 
-*Defined in [struct.ts:102](https://github.com/OctoD/ftts/blob/73fcc67/src/struct.ts#L102)*
+*Defined in [struct.ts:102](https://github.com/OctoD/ftts/blob/b8036e1/src/struct.ts#L102)*
 
 **`export`** 
 
@@ -231,7 +231,7 @@ ___
 
 ▸ **values**<**T**>(`struct`: [Struct](../interfaces/_struct_.struct.md)‹T›): *Array‹[Type](../interfaces/_type_.type.md)‹unknown››*
 
-*Defined in [struct.ts:114](https://github.com/OctoD/ftts/blob/73fcc67/src/struct.ts#L114)*
+*Defined in [struct.ts:114](https://github.com/OctoD/ftts/blob/b8036e1/src/struct.ts#L114)*
 
 **`export`** 
 

@@ -9,7 +9,9 @@
 ### Type aliases
 
 * [Any](_primitives_.md#any)
+* [Bit](_primitives_.md#bit)
 * [Bool](_primitives_.md#bool)
+* [Char](_primitives_.md#char)
 * [Fn](_primitives_.md#fn)
 * [Null](_primitives_.md#null)
 * [Nullable](_primitives_.md#nullable)
@@ -21,7 +23,9 @@
 ### Variables
 
 * [any](_primitives_.md#const-any)
+* [bit](_primitives_.md#const-bit)
 * [bool](_primitives_.md#const-bool)
+* [char](_primitives_.md#const-char)
 * [fn](_primitives_.md#const-fn)
 * [nil](_primitives_.md#const-nil)
 * [num](_primitives_.md#const-num)
@@ -32,7 +36,9 @@
 ### Functions
 
 * [Any](_primitives_.md#any)
+* [Bit](_primitives_.md#bit)
 * [Bool](_primitives_.md#bool)
+* [Char](_primitives_.md#char)
 * [Fn](_primitives_.md#fn)
 * [Null](_primitives_.md#null)
 * [Nullable](_primitives_.md#nullable)
@@ -47,7 +53,15 @@
 
 Ƭ **Any**: *[Type](../interfaces/_type_.type.md)‹T›*
 
-*Defined in [primitives.ts:3](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L3)*
+*Defined in [primitives.ts:3](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L3)*
+
+___
+
+###  Bit
+
+Ƭ **Bit**: *[Type](../interfaces/_type_.type.md)‹number›*
+
+*Defined in [primitives.ts:5](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L5)*
 
 ___
 
@@ -55,7 +69,15 @@ ___
 
 Ƭ **Bool**: *[Type](../interfaces/_type_.type.md)‹boolean›*
 
-*Defined in [primitives.ts:4](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L4)*
+*Defined in [primitives.ts:4](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L4)*
+
+___
+
+###  Char
+
+Ƭ **Char**: *[Type](../interfaces/_type_.type.md)‹string›*
+
+*Defined in [primitives.ts:6](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L6)*
 
 ___
 
@@ -63,7 +85,7 @@ ___
 
 Ƭ **Fn**: *[Type](../interfaces/_type_.type.md)‹T›*
 
-*Defined in [primitives.ts:5](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L5)*
+*Defined in [primitives.ts:7](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L7)*
 
 ___
 
@@ -71,7 +93,7 @@ ___
 
 Ƭ **Null**: *[Type](../interfaces/_type_.type.md)‹null›*
 
-*Defined in [primitives.ts:9](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L9)*
+*Defined in [primitives.ts:11](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L11)*
 
 ___
 
@@ -79,7 +101,7 @@ ___
 
 Ƭ **Nullable**: *[Type](../interfaces/_type_.type.md)‹T | null›*
 
-*Defined in [primitives.ts:10](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L10)*
+*Defined in [primitives.ts:12](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L12)*
 
 ___
 
@@ -87,7 +109,7 @@ ___
 
 Ƭ **Num**: *[Type](../interfaces/_type_.type.md)‹number›*
 
-*Defined in [primitives.ts:11](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L11)*
+*Defined in [primitives.ts:13](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L13)*
 
 ___
 
@@ -95,7 +117,7 @@ ___
 
 Ƭ **Obj**: *[Type](../interfaces/_type_.type.md)‹object›*
 
-*Defined in [primitives.ts:8](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L8)*
+*Defined in [primitives.ts:10](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L10)*
 
 ___
 
@@ -103,7 +125,7 @@ ___
 
 Ƭ **Str**: *[Type](../interfaces/_type_.type.md)‹string›*
 
-*Defined in [primitives.ts:12](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L12)*
+*Defined in [primitives.ts:14](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L14)*
 
 ___
 
@@ -111,7 +133,7 @@ ___
 
 Ƭ **Undefined**: *[Type](../interfaces/_type_.type.md)‹undefined›*
 
-*Defined in [primitives.ts:13](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L13)*
+*Defined in [primitives.ts:15](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L15)*
 
 ## Variables
 
@@ -119,7 +141,15 @@ ___
 
 • **any**: *[Type](../interfaces/_type_.type.md)‹any›* =  Any()
 
-*Defined in [primitives.ts:64](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L64)*
+*Defined in [primitives.ts:82](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L82)*
+
+___
+
+### `Const` bit
+
+• **bit**: *[Type](../interfaces/_type_.type.md)‹number›* =  Bit()
+
+*Defined in [primitives.ts:84](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L84)*
 
 ___
 
@@ -127,7 +157,15 @@ ___
 
 • **bool**: *[Type](../interfaces/_type_.type.md)‹boolean›* =  Bool()
 
-*Defined in [primitives.ts:65](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L65)*
+*Defined in [primitives.ts:83](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L83)*
+
+___
+
+### `Const` char
+
+• **char**: *[Type](../interfaces/_type_.type.md)‹string›* =  Char()
+
+*Defined in [primitives.ts:85](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L85)*
 
 ___
 
@@ -135,7 +173,7 @@ ___
 
 • **fn**: *[Type](../interfaces/_type_.type.md)‹(Anonymous function)›* =  Fn(() => void 0)
 
-*Defined in [primitives.ts:66](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L66)*
+*Defined in [primitives.ts:86](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L86)*
 
 ___
 
@@ -143,7 +181,7 @@ ___
 
 • **nil**: *[Type](../interfaces/_type_.type.md)‹null›* =  Null()
 
-*Defined in [primitives.ts:67](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L67)*
+*Defined in [primitives.ts:87](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L87)*
 
 ___
 
@@ -151,7 +189,7 @@ ___
 
 • **num**: *[Type](../interfaces/_type_.type.md)‹number›* =  Num()
 
-*Defined in [primitives.ts:68](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L68)*
+*Defined in [primitives.ts:88](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L88)*
 
 ___
 
@@ -159,7 +197,7 @@ ___
 
 • **obj**: *[Type](../interfaces/_type_.type.md)‹object›* =  Obj()
 
-*Defined in [primitives.ts:69](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L69)*
+*Defined in [primitives.ts:89](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L89)*
 
 ___
 
@@ -167,7 +205,7 @@ ___
 
 • **str**: *[Type](../interfaces/_type_.type.md)‹string›* =  Str()
 
-*Defined in [primitives.ts:70](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L70)*
+*Defined in [primitives.ts:90](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L90)*
 
 ___
 
@@ -175,7 +213,7 @@ ___
 
 • **und**: *[Type](../interfaces/_type_.type.md)‹undefined›* =  Undefined()
 
-*Defined in [primitives.ts:71](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L71)*
+*Defined in [primitives.ts:91](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L91)*
 
 ## Functions
 
@@ -183,7 +221,7 @@ ___
 
 ▸ **Any**<**T**>(`value`: T): *[Type](../interfaces/_type_.type.md)‹T›*
 
-*Defined in [primitives.ts:15](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L15)*
+*Defined in [primitives.ts:17](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L17)*
 
 **Type parameters:**
 
@@ -199,11 +237,27 @@ Name | Type | Default |
 
 ___
 
+###  Bit
+
+▸ **Bit**(`value`: number): *[Type](../interfaces/_type_.type.md)‹number›*
+
+*Defined in [primitives.ts:25](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L25)*
+
+**Parameters:**
+
+Name | Type | Default |
+------ | ------ | ------ |
+`value` | number | 0 |
+
+**Returns:** *[Type](../interfaces/_type_.type.md)‹number›*
+
+___
+
 ###  Bool
 
 ▸ **Bool**(`value`: boolean): *[Type](../interfaces/_type_.type.md)‹boolean›*
 
-*Defined in [primitives.ts:19](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L19)*
+*Defined in [primitives.ts:21](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L21)*
 
 **Parameters:**
 
@@ -215,11 +269,27 @@ Name | Type | Default |
 
 ___
 
+###  Char
+
+▸ **Char**(`value`: string): *[Type](../interfaces/_type_.type.md)‹string›*
+
+*Defined in [primitives.ts:33](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L33)*
+
+**Parameters:**
+
+Name | Type | Default |
+------ | ------ | ------ |
+`value` | string | " " |
+
+**Returns:** *[Type](../interfaces/_type_.type.md)‹string›*
+
+___
+
 ###  Fn
 
 ▸ **Fn**<**Fn**>(`value`: Fn): *[Type](../interfaces/_type_.type.md)‹Fn›*
 
-*Defined in [primitives.ts:23](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L23)*
+*Defined in [primitives.ts:41](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L41)*
 
 **Type parameters:**
 
@@ -239,7 +309,7 @@ ___
 
 ▸ **Null**(): *[Type](../interfaces/_type_.type.md)‹null›*
 
-*Defined in [primitives.ts:35](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L35)*
+*Defined in [primitives.ts:53](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L53)*
 
 **Returns:** *[Type](../interfaces/_type_.type.md)‹null›*
 
@@ -249,7 +319,7 @@ ___
 
 ▸ **Nullable**<**U**>(`type`: [Type](../interfaces/_type_.type.md)‹U›): *[Type](../interfaces/_type_.type.md)‹U | null›*
 
-*Defined in [primitives.ts:39](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L39)*
+*Defined in [primitives.ts:57](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L57)*
 
 **Type parameters:**
 
@@ -269,7 +339,7 @@ ___
 
 ▸ **Num**(`value`: number): *[Type](../interfaces/_type_.type.md)‹number›*
 
-*Defined in [primitives.ts:48](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L48)*
+*Defined in [primitives.ts:66](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L66)*
 
 **Parameters:**
 
@@ -285,7 +355,7 @@ ___
 
 ▸ **Obj**(`value`: object): *[Type](../interfaces/_type_.type.md)‹object›*
 
-*Defined in [primitives.ts:27](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L27)*
+*Defined in [primitives.ts:45](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L45)*
 
 **Parameters:**
 
@@ -301,7 +371,7 @@ ___
 
 ▸ **Str**(`value`: string): *[Type](../interfaces/_type_.type.md)‹string›*
 
-*Defined in [primitives.ts:56](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L56)*
+*Defined in [primitives.ts:74](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L74)*
 
 **Parameters:**
 
@@ -317,6 +387,6 @@ ___
 
 ▸ **Undefined**(): *[Type](../interfaces/_type_.type.md)‹undefined›*
 
-*Defined in [primitives.ts:60](https://github.com/OctoD/ftts/blob/73fcc67/src/primitives.ts#L60)*
+*Defined in [primitives.ts:78](https://github.com/OctoD/ftts/blob/b8036e1/src/primitives.ts#L78)*
 
 **Returns:** *[Type](../interfaces/_type_.type.md)‹undefined›*

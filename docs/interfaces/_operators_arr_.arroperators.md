@@ -22,7 +22,7 @@
 
 ▸ **and**<**T**, **U**>(`arr`: arr.Arr‹T›, `arr2`: arr.Arr‹T›): *arr.Arr‹T›*
 
-*Defined in [operators/Arr.ts:8](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/Arr.ts#L8)*
+*Defined in [operators/Arr.ts:8](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/Arr.ts#L8)*
 
 **Type parameters:**
 
@@ -45,7 +45,7 @@ ___
 
 ▸ **append**<**T**, **U**>(`arr`: arr.Arr‹T›, `item`: T): *arr.Arr‹T›*
 
-*Defined in [operators/Arr.ts:9](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/Arr.ts#L9)*
+*Defined in [operators/Arr.ts:9](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/Arr.ts#L9)*
 
 **Type parameters:**
 
@@ -68,7 +68,7 @@ ___
 
 ▸ **or**<**T**, **U**>(`arr`: arr.Arr‹T›, `arr2`: arr.Arr‹T›): *arr.Arr‹T›*
 
-*Defined in [operators/Arr.ts:10](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/Arr.ts#L10)*
+*Defined in [operators/Arr.ts:10](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/Arr.ts#L10)*
 
 **Type parameters:**
 

@@ -20,4 +20,4 @@
 
 • **StructOperators**: *[StructOperators](../interfaces/_operators_struct_.structoperators.md)* =  <StructOperators>{}
 
-*Defined in [operators/Struct.ts:12](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/Struct.ts#L12)*
+*Defined in [operators/Struct.ts:12](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/Struct.ts#L12)*

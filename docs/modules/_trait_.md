@@ -26,7 +26,7 @@
 
 Ƭ **TraitInvokable**: *function*
 
-*Defined in [trait.ts:7](https://github.com/OctoD/ftts/blob/73fcc67/src/trait.ts#L7)*
+*Defined in [trait.ts:7](https://github.com/OctoD/ftts/blob/b8036e1/src/trait.ts#L7)*
 
 #### Type declaration:
 
@@ -44,7 +44,7 @@ Name | Type |
 
 ▸ **create**<**T**, **U**>(`trait`: T): *T*
 
-*Defined in [trait.ts:11](https://github.com/OctoD/ftts/blob/73fcc67/src/trait.ts#L11)*
+*Defined in [trait.ts:11](https://github.com/OctoD/ftts/blob/b8036e1/src/trait.ts#L11)*
 
 **Type parameters:**
 
@@ -66,7 +66,7 @@ ___
 
 ▸ **impl**<**T**, **U**>(`type`: [Type](../interfaces/_type_.type.md)‹T›, `trait`: U): *[TraitInvokable](_trait_.md#traitinvokable)‹[Type](../interfaces/_type_.type.md), U, T›*
 
-*Defined in [trait.ts:19](https://github.com/OctoD/ftts/blob/73fcc67/src/trait.ts#L19)*
+*Defined in [trait.ts:19](https://github.com/OctoD/ftts/blob/b8036e1/src/trait.ts#L19)*
 
 **Type parameters:**
 
@@ -89,7 +89,7 @@ ___
 
 ▸ **isTrait**(`arg`: unknown): *boolean*
 
-*Defined in [trait.ts:29](https://github.com/OctoD/ftts/blob/73fcc67/src/trait.ts#L29)*
+*Defined in [trait.ts:29](https://github.com/OctoD/ftts/blob/b8036e1/src/trait.ts#L29)*
 
 **Parameters:**
 

@@ -20,4 +20,4 @@
 
 • **NullOperators**: *[NullOperators](../interfaces/_operators_null_.nulloperators.md)* =  <NullOperators>{}
 
-*Defined in [operators/Null.ts:11](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/Null.ts#L11)*
+*Defined in [operators/Null.ts:11](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/Null.ts#L11)*

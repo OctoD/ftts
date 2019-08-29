@@ -21,7 +21,7 @@
 
 ▸ **is**(`a`: [Type](_type_.type.md)‹any›, `b`: [Type](_type_.type.md)‹any›): *boolean*
 
-*Defined in [operators/Struct.ts:8](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/Struct.ts#L8)*
+*Defined in [operators/Struct.ts:8](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/Struct.ts#L8)*
 
 **Parameters:**
 
@@ -38,7 +38,7 @@ ___
 
 ▸ **isNot**(`a`: [Type](_type_.type.md)‹any›, `b`: [Type](_type_.type.md)‹any›): *boolean*
 
-*Defined in [operators/Struct.ts:9](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/Struct.ts#L9)*
+*Defined in [operators/Struct.ts:9](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/Struct.ts#L9)*
 
 **Parameters:**
 

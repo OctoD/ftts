@@ -20,7 +20,7 @@
 
 ▸ **is**(`a`: [Type](_type_.type.md)‹any›, `b`: [Bool](../modules/_primitives_.md#bool)): *boolean*
 
-*Defined in [operators/Bool.ts:7](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/Bool.ts#L7)*
+*Defined in [operators/Bool.ts:7](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/Bool.ts#L7)*
 
 **Parameters:**
 

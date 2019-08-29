@@ -9,7 +9,9 @@
 ### Type aliases
 
 * [Arr](_arr_.md#arr)
+* [BitArr](_arr_.md#bitarr)
 * [BoolArr](_arr_.md#boolarr)
+* [CharArr](_arr_.md#chararr)
 * [IterableCallback](_arr_.md#iterablecallback)
 * [NumArr](_arr_.md#numarr)
 * [ObjArr](_arr_.md#objarr)
@@ -18,7 +20,9 @@
 ### Variables
 
 * [arr](_arr_.md#const-arr)
+* [bitarr](_arr_.md#const-bitarr)
 * [boolarr](_arr_.md#const-boolarr)
+* [chararr](_arr_.md#const-chararr)
 * [numarr](_arr_.md#const-numarr)
 * [objarr](_arr_.md#const-objarr)
 * [strarr](_arr_.md#const-strarr)
@@ -26,7 +30,9 @@
 ### Functions
 
 * [Arr](_arr_.md#arr)
+* [BitArr](_arr_.md#bitarr)
 * [BoolArr](_arr_.md#boolarr)
+* [CharArr](_arr_.md#chararr)
 * [NumArr](_arr_.md#numarr)
 * [ObjArr](_arr_.md#objarr)
 * [StrArr](_arr_.md#strarr)
@@ -56,7 +62,15 @@
 
 Ƭ **Arr**: *[Type](../interfaces/_type_.type.md)‹T[]›*
 
-*Defined in [arr.ts:17](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L17)*
+*Defined in [arr.ts:21](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L21)*
+
+___
+
+###  BitArr
+
+Ƭ **BitArr**: *[Arr](_arr_.md#arr)‹[Bit](_primitives_.md#bit)›*
+
+*Defined in [arr.ts:23](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L23)*
 
 ___
 
@@ -64,7 +78,15 @@ ___
 
 Ƭ **BoolArr**: *[Arr](_arr_.md#arr)‹[Bool](_primitives_.md#bool)›*
 
-*Defined in [arr.ts:18](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L18)*
+*Defined in [arr.ts:24](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L24)*
+
+___
+
+###  CharArr
+
+Ƭ **CharArr**: *[Arr](_arr_.md#arr)‹[Char](_primitives_.md#char)›*
+
+*Defined in [arr.ts:22](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L22)*
 
 ___
 
@@ -72,7 +94,7 @@ ___
 
 Ƭ **IterableCallback**: *function*
 
-*Defined in [arr.ts:103](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L103)*
+*Defined in [arr.ts:127](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L127)*
 
 #### Type declaration:
 
@@ -92,7 +114,7 @@ ___
 
 Ƭ **NumArr**: *[Arr](_arr_.md#arr)‹[Num](_primitives_.md#num)›*
 
-*Defined in [arr.ts:20](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L20)*
+*Defined in [arr.ts:26](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L26)*
 
 ___
 
@@ -100,7 +122,7 @@ ___
 
 Ƭ **ObjArr**: *[Arr](_arr_.md#arr)‹[Obj](_primitives_.md#obj)›*
 
-*Defined in [arr.ts:19](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L19)*
+*Defined in [arr.ts:25](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L25)*
 
 ___
 
@@ -108,7 +130,7 @@ ___
 
 Ƭ **StrArr**: *[Arr](_arr_.md#arr)‹[Str](_primitives_.md#str)›*
 
-*Defined in [arr.ts:21](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L21)*
+*Defined in [arr.ts:27](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L27)*
 
 ## Variables
 
@@ -116,7 +138,15 @@ ___
 
 • **arr**: *[Type](../interfaces/_type_.type.md)‹[Type](../interfaces/_type_.type.md)‹any›[]›* =  Arr()
 
-*Defined in [arr.ts:59](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L59)*
+*Defined in [arr.ts:65](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L65)*
+
+___
+
+### `Const` bitarr
+
+• **bitarr**: *[Type](../interfaces/_type_.type.md)‹[Type](../interfaces/_type_.type.md)‹number›[]›* =  BitArr()
+
+*Defined in [arr.ts:66](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L66)*
 
 ___
 
@@ -124,7 +154,15 @@ ___
 
 • **boolarr**: *[Type](../interfaces/_type_.type.md)‹[Type](../interfaces/_type_.type.md)‹boolean›[]›* =  BoolArr()
 
-*Defined in [arr.ts:60](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L60)*
+*Defined in [arr.ts:68](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L68)*
+
+___
+
+### `Const` chararr
+
+• **chararr**: *[Type](../interfaces/_type_.type.md)‹[Type](../interfaces/_type_.type.md)‹string›[]›* =  CharArr()
+
+*Defined in [arr.ts:67](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L67)*
 
 ___
 
@@ -132,7 +170,7 @@ ___
 
 • **numarr**: *[Type](../interfaces/_type_.type.md)‹[Type](../interfaces/_type_.type.md)‹number›[]›* =  NumArr()
 
-*Defined in [arr.ts:62](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L62)*
+*Defined in [arr.ts:70](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L70)*
 
 ___
 
@@ -140,7 +178,7 @@ ___
 
 • **objarr**: *[Type](../interfaces/_type_.type.md)‹[Type](../interfaces/_type_.type.md)‹object›[]›* =  ObjArr()
 
-*Defined in [arr.ts:61](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L61)*
+*Defined in [arr.ts:69](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L69)*
 
 ___
 
@@ -148,7 +186,7 @@ ___
 
 • **strarr**: *[Type](../interfaces/_type_.type.md)‹[Type](../interfaces/_type_.type.md)‹string›[]›* =  StrArr()
 
-*Defined in [arr.ts:63](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L63)*
+*Defined in [arr.ts:71](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L71)*
 
 ## Functions
 
@@ -156,7 +194,7 @@ ___
 
 ▸ **Arr**(`value`: any[]): *[Arr]()‹[Any](_primitives_.md#any)›*
 
-*Defined in [arr.ts:65](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L65)*
+*Defined in [arr.ts:73](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L73)*
 
 **Parameters:**
 
@@ -168,11 +206,27 @@ Name | Type | Default |
 
 ___
 
+###  BitArr
+
+▸ **BitArr**(`value`: number[]): *[Arr](_arr_.md#arr)‹[Bit](_primitives_.md#bit)›*
+
+*Defined in [arr.ts:77](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L77)*
+
+**Parameters:**
+
+Name | Type | Default |
+------ | ------ | ------ |
+`value` | number[] |  [] |
+
+**Returns:** *[Arr](_arr_.md#arr)‹[Bit](_primitives_.md#bit)›*
+
+___
+
 ###  BoolArr
 
 ▸ **BoolArr**(`value`: boolean[]): *[Arr](_arr_.md#arr)‹[Bool](_primitives_.md#bool)›*
 
-*Defined in [arr.ts:69](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L69)*
+*Defined in [arr.ts:85](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L85)*
 
 **Parameters:**
 
@@ -184,11 +238,27 @@ Name | Type | Default |
 
 ___
 
+###  CharArr
+
+▸ **CharArr**(`value`: string[]): *[Arr](_arr_.md#arr)‹[Char](_primitives_.md#char)›*
+
+*Defined in [arr.ts:93](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L93)*
+
+**Parameters:**
+
+Name | Type | Default |
+------ | ------ | ------ |
+`value` | string[] |  [] |
+
+**Returns:** *[Arr](_arr_.md#arr)‹[Char](_primitives_.md#char)›*
+
+___
+
 ###  NumArr
 
 ▸ **NumArr**(`value`: number[]): *[Arr](_arr_.md#arr)‹[Num](_primitives_.md#num)›*
 
-*Defined in [arr.ts:85](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L85)*
+*Defined in [arr.ts:109](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L109)*
 
 **Parameters:**
 
@@ -204,7 +274,7 @@ ___
 
 ▸ **ObjArr**(`value`: object[]): *[Arr](_arr_.md#arr)‹[Obj](_primitives_.md#obj)›*
 
-*Defined in [arr.ts:77](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L77)*
+*Defined in [arr.ts:101](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L101)*
 
 **Parameters:**
 
@@ -220,7 +290,7 @@ ___
 
 ▸ **StrArr**(`value`: string[]): *[Arr](_arr_.md#arr)‹[Str](_primitives_.md#str)›*
 
-*Defined in [arr.ts:93](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L93)*
+*Defined in [arr.ts:117](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L117)*
 
 **Parameters:**
 
@@ -236,7 +306,7 @@ ___
 
 ▸ **concat**<**T**, **U**>(...`arrs`: [Arr](_arr_.md#arr)‹T›[]): *[Arr](_arr_.md#arr)‹T›*
 
-*Defined in [arr.ts:109](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L109)*
+*Defined in [arr.ts:133](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L133)*
 
 **Type parameters:**
 
@@ -258,7 +328,7 @@ ___
 
 ▸ **ensureAllOfType**<**U**>(`type`: [Type](../interfaces/_type_.type.md)‹U›): *function*
 
-*Defined in [arr.ts:33](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L33)*
+*Defined in [arr.ts:39](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L39)*
 
 **Type parameters:**
 
@@ -286,7 +356,7 @@ ___
 
 ▸ **ensureArrayAnd**(`fn`: function): *function*
 
-*Defined in [arr.ts:27](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L27)*
+*Defined in [arr.ts:33](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L33)*
 
 **Parameters:**
 
@@ -316,7 +386,7 @@ ___
 
 ▸ **ensureOfType**<**U**>(`type`: [Type](../interfaces/_type_.type.md)‹U›, `args`: unknown[], `index`: number): *boolean*
 
-*Defined in [arr.ts:37](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L37)*
+*Defined in [arr.ts:43](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L43)*
 
 **Type parameters:**
 
@@ -338,7 +408,7 @@ ___
 
 ▸ **fill**<**T**, **U**>(`arr`: [Arr](_arr_.md#arr)‹T›, `value`: [Any](_primitives_.md#any), `start`: [Num](_primitives_.md#num) | [Undefined](_primitives_.md#undefined), `end`: [Num](_primitives_.md#num) | [Undefined](_primitives_.md#undefined)): *[Arr](_arr_.md#arr)‹T›*
 
-*Defined in [arr.ts:128](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L128)*
+*Defined in [arr.ts:152](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L152)*
 
 **Type parameters:**
 
@@ -363,7 +433,7 @@ ___
 
 ▸ **filter**<**T**, **U**>(`arr`: [Arr](_arr_.md#arr)‹T›, `fn`: [Fn](_primitives_.md#fn)‹[IterableCallback](_arr_.md#iterablecallback)‹[Arr](_arr_.md#arr)‹T›››): *[Arr](_arr_.md#arr)‹T›*
 
-*Defined in [arr.ts:119](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L119)*
+*Defined in [arr.ts:143](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L143)*
 
 **Type parameters:**
 
@@ -386,7 +456,7 @@ ___
 
 ▸ **find**<**T**, **U**>(`arr`: [Arr](_arr_.md#arr)‹T›, `fn`: [Fn](_primitives_.md#fn)‹[IterableCallback](_arr_.md#iterablecallback)‹T | [Undefined](_primitives_.md#undefined)››): *T | [Undefined](_primitives_.md#undefined)*
 
-*Defined in [arr.ts:143](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L143)*
+*Defined in [arr.ts:167](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L167)*
 
 **Type parameters:**
 
@@ -409,7 +479,7 @@ ___
 
 ▸ **findIndex**<**T**, **U**>(`arr`: [Arr](_arr_.md#arr)‹T›, `fn`: [Fn](_primitives_.md#fn)‹[IterableCallback](_arr_.md#iterablecallback)‹[Num](_primitives_.md#num) | [Undefined](_primitives_.md#undefined)››): *[Num](_primitives_.md#num)*
 
-*Defined in [arr.ts:153](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L153)*
+*Defined in [arr.ts:177](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L177)*
 
 **Type parameters:**
 
@@ -432,7 +502,7 @@ ___
 
 ▸ **indexOf**<**T**, **U**, **K**>(`arr`: [Arr](_arr_.md#arr)‹T›, `type`: [Type](../interfaces/_type_.type.md)‹K›): *[Num](_primitives_.md#num)*
 
-*Defined in [arr.ts:162](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L162)*
+*Defined in [arr.ts:186](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L186)*
 
 **Type parameters:**
 
@@ -457,7 +527,7 @@ ___
 
 ▸ **join**<**T**, **U**>(`arr`: [Arr](_arr_.md#arr)‹T›, `delimiter`: [Str](_primitives_.md#str)): *[Str](_primitives_.md#str)*
 
-*Defined in [arr.ts:177](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L177)*
+*Defined in [arr.ts:201](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L201)*
 
 **Type parameters:**
 
@@ -480,7 +550,7 @@ ___
 
 ▸ **map**<**T**, **U**, **K**, **Y**>(`arr`: [Arr](_arr_.md#arr)‹T›, `fn`: [Fn](_primitives_.md#fn)‹[IterableCallback](_arr_.md#iterablecallback)‹[Arr](_arr_.md#arr)‹K›››): *[Arr](_arr_.md#arr)‹K›*
 
-*Defined in [arr.ts:184](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L184)*
+*Defined in [arr.ts:208](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L208)*
 
 **Type parameters:**
 
@@ -507,7 +577,7 @@ ___
 
 ▸ **mapToType**<**T**>(`type`: [Type](../interfaces/_type_.type.md)‹T›): *function*
 
-*Defined in [arr.ts:51](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L51)*
+*Defined in [arr.ts:57](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L57)*
 
 **Type parameters:**
 
@@ -537,7 +607,7 @@ ___
 
 ▸ **noop**(): *boolean*
 
-*Defined in [arr.ts:25](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L25)*
+*Defined in [arr.ts:31](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L31)*
 
 **Returns:** *boolean*
 
@@ -547,7 +617,7 @@ ___
 
 ▸ **pop**<**T**, **U**>(`arr`: [Arr](_arr_.md#arr)‹T›): *[Arr](_arr_.md#arr)‹T›*
 
-*Defined in [arr.ts:195](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L195)*
+*Defined in [arr.ts:219](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L219)*
 
 **Type parameters:**
 
@@ -569,7 +639,7 @@ ___
 
 ▸ **push**<**T**, **U**>(`arr`: [Arr](_arr_.md#arr)‹T›, `element`: T): *[Arr](_arr_.md#arr)‹T›*
 
-*Defined in [arr.ts:203](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L203)*
+*Defined in [arr.ts:227](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L227)*
 
 **Type parameters:**
 
@@ -592,7 +662,7 @@ ___
 
 ▸ **shift**<**T**, **U**>(`arr`: [Arr](_arr_.md#arr)‹T›): *[Arr](_arr_.md#arr)‹T›*
 
-*Defined in [arr.ts:207](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L207)*
+*Defined in [arr.ts:231](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L231)*
 
 **Type parameters:**
 
@@ -614,7 +684,7 @@ ___
 
 ▸ **slice**<**T**, **U**>(`arr`: [Arr](_arr_.md#arr)‹T›, `start`: [Num](_primitives_.md#num) | [Undefined](_primitives_.md#undefined), `stop`: [Num](_primitives_.md#num) | [Undefined](_primitives_.md#undefined)): *[Arr](_arr_.md#arr)‹T›*
 
-*Defined in [arr.ts:215](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L215)*
+*Defined in [arr.ts:239](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L239)*
 
 **Type parameters:**
 
@@ -638,7 +708,7 @@ ___
 
 ▸ **splice**<**T**, **U**>(`arr`: [Arr](_arr_.md#arr)‹T›, `start`: [Num](_primitives_.md#num), `deleteCount`: [Num](_primitives_.md#num) | [Undefined](_primitives_.md#undefined), ...`items`: T[]): *[Arr](_arr_.md#arr)‹T›*
 
-*Defined in [arr.ts:223](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L223)*
+*Defined in [arr.ts:247](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L247)*
 
 **Type parameters:**
 
@@ -663,7 +733,7 @@ ___
 
 ▸ **unshift**<**T**, **U**>(`arr`: [Arr](_arr_.md#arr)‹T›, ...`items`: T[]): *[Arr](_arr_.md#arr)‹T›*
 
-*Defined in [arr.ts:250](https://github.com/OctoD/ftts/blob/73fcc67/src/arr.ts#L250)*
+*Defined in [arr.ts:274](https://github.com/OctoD/ftts/blob/b8036e1/src/arr.ts#L274)*
 
 **Type parameters:**
 

@@ -21,7 +21,7 @@
 
 • **coalesce**: *[Operator](_operator_.operator.md)‹any | null, any›*
 
-*Defined in [operators/Null.ts:7](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/Null.ts#L7)*
+*Defined in [operators/Null.ts:7](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/Null.ts#L7)*
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 • **toNullable**: *[Operator](_operator_.operator.md)‹any, null›*
 
-*Defined in [operators/Null.ts:8](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/Null.ts#L8)*
+*Defined in [operators/Null.ts:8](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/Null.ts#L8)*

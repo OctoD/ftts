@@ -20,4 +20,4 @@
 
 • **ArrOperators**: *[ArrOperators](../interfaces/_operators_arr_.arroperators.md)* =  <ArrOperators>{}
 
-*Defined in [operators/Arr.ts:13](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/Arr.ts#L13)*
+*Defined in [operators/Arr.ts:13](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/Arr.ts#L13)*

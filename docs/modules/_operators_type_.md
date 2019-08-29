@@ -20,4 +20,4 @@
 
 • **TypeOperators**: *[TypeOperators](../interfaces/_operators_type_.typeoperators.md)* =  <TypeOperators>{}
 
-*Defined in [operators/Type.ts:11](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/Type.ts#L11)*
+*Defined in [operators/Type.ts:11](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/Type.ts#L11)*

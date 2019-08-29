@@ -20,4 +20,4 @@
 
 • **StrOperators**: *[StrOperators](../interfaces/_operators_str_.stroperators.md)* =  <StrOperators>{}
 
-*Defined in [operators/Str.ts:11](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/Str.ts#L11)*
+*Defined in [operators/Str.ts:11](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/Str.ts#L11)*

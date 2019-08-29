@@ -47,49 +47,49 @@
 
 ### `Const` INT16_MAX
 
-• **INT16_MAX**: *32767* = 32767
+• **INT16_MAX**: *number* =  Math.floor(UINT16_MAX / 2)
 
-*Defined in [int.ts:7](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L7)*
+*Defined in [int.ts:13](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L13)*
 
 ___
 
 ### `Const` INT16_MIN
 
-• **INT16_MIN**: *-32768* =  -32_768
+• **INT16_MIN**: *number* =  ~INT16_MAX
 
-*Defined in [int.ts:6](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L6)*
+*Defined in [int.ts:14](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L14)*
 
 ___
 
 ### `Const` INT32_MAX
 
-• **INT32_MAX**: *2147483647* = 2147483647
+• **INT32_MAX**: *number* =  Math.floor(UINT32_MAX / 2)
 
-*Defined in [int.ts:9](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L9)*
+*Defined in [int.ts:15](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L15)*
 
 ___
 
 ### `Const` INT32_MIN
 
-• **INT32_MIN**: *-2147483648* =  -2_147_483_648
+• **INT32_MIN**: *number* =  ~INT32_MAX
 
-*Defined in [int.ts:8](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L8)*
+*Defined in [int.ts:16](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L16)*
 
 ___
 
 ### `Const` INT8_MAX
 
-• **INT8_MAX**: *127* = 127
+• **INT8_MAX**: *number* =  Math.floor(UINT8_MAX / 2)
 
-*Defined in [int.ts:5](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L5)*
+*Defined in [int.ts:11](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L11)*
 
 ___
 
 ### `Const` INT8_MIN
 
-• **INT8_MIN**: *-128* =  -128
+• **INT8_MIN**: *number* =  ~INT8_MAX
 
-*Defined in [int.ts:4](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L4)*
+*Defined in [int.ts:12](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L12)*
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 • **Int16**: *function* =  impl(num, int16Trait)
 
-*Defined in [int.ts:62](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L62)*
+*Defined in [int.ts:62](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L62)*
 
 #### Type declaration:
 
@@ -115,7 +115,7 @@ ___
 
 • **Int32**: *function* =  impl(num, int32Trait)
 
-*Defined in [int.ts:63](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L63)*
+*Defined in [int.ts:63](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L63)*
 
 #### Type declaration:
 
@@ -133,7 +133,7 @@ ___
 
 • **Int8**: *function* =  impl(num, int8Trait)
 
-*Defined in [int.ts:61](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L61)*
+*Defined in [int.ts:61](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L61)*
 
 #### Type declaration:
 
@@ -151,7 +151,7 @@ ___
 
 • **UINT16_MAX**: *65535* = 65535
 
-*Defined in [int.ts:14](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L14)*
+*Defined in [int.ts:7](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L7)*
 
 ___
 
@@ -159,7 +159,7 @@ ___
 
 • **UINT16_MIN**: *0* = 0
 
-*Defined in [int.ts:13](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L13)*
+*Defined in [int.ts:6](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L6)*
 
 ___
 
@@ -167,7 +167,7 @@ ___
 
 • **UINT32_MAX**: *4294967295* = 4294967295
 
-*Defined in [int.ts:16](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L16)*
+*Defined in [int.ts:9](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L9)*
 
 ___
 
@@ -175,7 +175,7 @@ ___
 
 • **UINT32_MIN**: *0* = 0
 
-*Defined in [int.ts:15](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L15)*
+*Defined in [int.ts:8](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L8)*
 
 ___
 
@@ -183,7 +183,7 @@ ___
 
 • **UINT8_MAX**: *256* = 256
 
-*Defined in [int.ts:12](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L12)*
+*Defined in [int.ts:5](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L5)*
 
 ___
 
@@ -191,7 +191,7 @@ ___
 
 • **UINT8_MIN**: *0* = 0
 
-*Defined in [int.ts:11](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L11)*
+*Defined in [int.ts:4](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L4)*
 
 ___
 
@@ -199,7 +199,7 @@ ___
 
 • **Uint16**: *function* =  impl(num, uint16Trait)
 
-*Defined in [int.ts:66](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L66)*
+*Defined in [int.ts:66](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L66)*
 
 #### Type declaration:
 
@@ -217,7 +217,7 @@ ___
 
 • **Uint32**: *function* =  impl(num, uint32Trait)
 
-*Defined in [int.ts:67](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L67)*
+*Defined in [int.ts:67](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L67)*
 
 #### Type declaration:
 
@@ -235,7 +235,7 @@ ___
 
 • **Uint8**: *function* =  impl(num, uint8Trait)
 
-*Defined in [int.ts:65](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L65)*
+*Defined in [int.ts:65](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L65)*
 
 #### Type declaration:
 
@@ -253,7 +253,7 @@ ___
 
 • **int16**: *[Type](../interfaces/_type_.type.md)‹number› & object* =  Int16(0)
 
-*Defined in [int.ts:70](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L70)*
+*Defined in [int.ts:70](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L70)*
 
 ___
 
@@ -263,7 +263,7 @@ ___
   createIntValidator(INT16_MIN, INT16_MAX, true)
 )
 
-*Defined in [int.ts:45](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L45)*
+*Defined in [int.ts:45](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L45)*
 
 #### Type declaration:
 
@@ -279,7 +279,7 @@ ___
 
 • **int32**: *[Type](../interfaces/_type_.type.md)‹number› & object* =  Int32(0)
 
-*Defined in [int.ts:71](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L71)*
+*Defined in [int.ts:71](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L71)*
 
 ___
 
@@ -289,7 +289,7 @@ ___
   createIntValidator(INT32_MIN, INT32_MAX, true)
 )
 
-*Defined in [int.ts:48](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L48)*
+*Defined in [int.ts:48](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L48)*
 
 #### Type declaration:
 
@@ -305,7 +305,7 @@ ___
 
 • **int8**: *[Type](../interfaces/_type_.type.md)‹number› & object* =  Int8(0)
 
-*Defined in [int.ts:69](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L69)*
+*Defined in [int.ts:69](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L69)*
 
 ___
 
@@ -313,7 +313,7 @@ ___
 
 • **int8Trait**: *object* =  create(createIntValidator(INT8_MIN, INT8_MAX, true))
 
-*Defined in [int.ts:44](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L44)*
+*Defined in [int.ts:44](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L44)*
 
 #### Type declaration:
 
@@ -329,7 +329,7 @@ ___
 
 • **uint16**: *[Type](../interfaces/_type_.type.md)‹number› & object* =  Uint16(0)
 
-*Defined in [int.ts:74](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L74)*
+*Defined in [int.ts:74](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L74)*
 
 ___
 
@@ -339,7 +339,7 @@ ___
   createIntValidator(UINT16_MIN, UINT16_MAX, false)
 )
 
-*Defined in [int.ts:54](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L54)*
+*Defined in [int.ts:54](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L54)*
 
 #### Type declaration:
 
@@ -355,7 +355,7 @@ ___
 
 • **uint32**: *[Type](../interfaces/_type_.type.md)‹number› & object* =  Uint32(0)
 
-*Defined in [int.ts:75](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L75)*
+*Defined in [int.ts:75](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L75)*
 
 ___
 
@@ -365,7 +365,7 @@ ___
   createIntValidator(UINT32_MIN, UINT32_MAX, false)
 )
 
-*Defined in [int.ts:57](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L57)*
+*Defined in [int.ts:57](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L57)*
 
 #### Type declaration:
 
@@ -381,7 +381,7 @@ ___
 
 • **uint8**: *[Type](../interfaces/_type_.type.md)‹number› & object* =  Uint8(0)
 
-*Defined in [int.ts:73](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L73)*
+*Defined in [int.ts:73](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L73)*
 
 ___
 
@@ -391,7 +391,7 @@ ___
   createIntValidator(UINT8_MIN, UINT8_MAX, false)
 )
 
-*Defined in [int.ts:51](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L51)*
+*Defined in [int.ts:51](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L51)*
 
 #### Type declaration:
 
@@ -407,7 +407,7 @@ ___
 
 ▸ **createIntValidator**(`min`: number, `max`: number, `signed`: boolean): *object*
 
-*Defined in [int.ts:18](https://github.com/OctoD/ftts/blob/73fcc67/src/int.ts#L18)*
+*Defined in [int.ts:18](https://github.com/OctoD/ftts/blob/b8036e1/src/int.ts#L18)*
 
 **Parameters:**
 

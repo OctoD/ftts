@@ -32,7 +32,7 @@
 
 Ƭ **TypeBuilder**: *function*
 
-*Defined in [type.ts:1](https://github.com/OctoD/ftts/blob/73fcc67/src/type.ts#L1)*
+*Defined in [type.ts:1](https://github.com/OctoD/ftts/blob/b8036e1/src/type.ts#L1)*
 
 #### Type declaration:
 
@@ -50,7 +50,7 @@ ___
 
 Ƭ **TypeChecker**: *function*
 
-*Defined in [type.ts:2](https://github.com/OctoD/ftts/blob/73fcc67/src/type.ts#L2)*
+*Defined in [type.ts:2](https://github.com/OctoD/ftts/blob/b8036e1/src/type.ts#L2)*
 
 #### Type declaration:
 
@@ -68,7 +68,7 @@ ___
 
 Ƭ **TypeDecorator**: *function*
 
-*Defined in [type.ts:3](https://github.com/OctoD/ftts/blob/73fcc67/src/type.ts#L3)*
+*Defined in [type.ts:3](https://github.com/OctoD/ftts/blob/b8036e1/src/type.ts#L3)*
 
 #### Type declaration:
 
@@ -90,7 +90,7 @@ Name | Type |
 
 ▸ **automaticCheck**(): *boolean*
 
-*Defined in [type.ts:14](https://github.com/OctoD/ftts/blob/73fcc67/src/type.ts#L14)*
+*Defined in [type.ts:14](https://github.com/OctoD/ftts/blob/b8036e1/src/type.ts#L14)*
 
 **Returns:** *boolean*
 
@@ -100,7 +100,7 @@ ___
 
 ▸ **create**<**Value**>(`typename`: string, `typevalue`: Value, `typechecker`: [TypeChecker](_type_.md#typechecker)‹unknown›, `id`: string, `decorators`: [TypeDecorator](_type_.md#typedecorator)[]): *[Type](../interfaces/_type_.type.md)‹Value›*
 
-*Defined in [type.ts:16](https://github.com/OctoD/ftts/blob/73fcc67/src/type.ts#L16)*
+*Defined in [type.ts:16](https://github.com/OctoD/ftts/blob/b8036e1/src/type.ts#L16)*
 
 **Type parameters:**
 
@@ -124,7 +124,7 @@ ___
 
 ▸ **equals**<**T**>(`type`: [Type](../interfaces/_type_.type.md)‹T›, `equalsTo`: [Type](../interfaces/_type_.type.md)‹unknown›): *boolean*
 
-*Defined in [type.ts:53](https://github.com/OctoD/ftts/blob/73fcc67/src/type.ts#L53)*
+*Defined in [type.ts:53](https://github.com/OctoD/ftts/blob/b8036e1/src/type.ts#L53)*
 
 **Type parameters:**
 
@@ -145,7 +145,7 @@ ___
 
 ▸ **isType**(`value`: unknown): *boolean*
 
-*Defined in [type.ts:60](https://github.com/OctoD/ftts/blob/73fcc67/src/type.ts#L60)*
+*Defined in [type.ts:60](https://github.com/OctoD/ftts/blob/b8036e1/src/type.ts#L60)*
 
 **Parameters:**
 
@@ -161,7 +161,7 @@ ___
 
 ▸ **same**(`left`: [Type](../interfaces/_type_.type.md)‹any›, `right`: [Type](../interfaces/_type_.type.md)‹any›): *boolean*
 
-*Defined in [type.ts:79](https://github.com/OctoD/ftts/blob/73fcc67/src/type.ts#L79)*
+*Defined in [type.ts:79](https://github.com/OctoD/ftts/blob/b8036e1/src/type.ts#L79)*
 
 **Parameters:**
 
@@ -178,7 +178,7 @@ ___
 
 ▸ **throwIfUnacceptable**(`typename`: string, `typevalue`: unknown, `typechecker`: [TypeChecker](_type_.md#typechecker)‹unknown›): *void | never*
 
-*Defined in [type.ts:98](https://github.com/OctoD/ftts/blob/73fcc67/src/type.ts#L98)*
+*Defined in [type.ts:98](https://github.com/OctoD/ftts/blob/b8036e1/src/type.ts#L98)*
 
 **Parameters:**
 
@@ -196,7 +196,7 @@ ___
 
 ▸ **update**<**T**>(`type`: [Type](../interfaces/_type_.type.md)‹T›, `typevalue`: T): *[Type](../interfaces/_type_.type.md)‹T› | never*
 
-*Defined in [type.ts:83](https://github.com/OctoD/ftts/blob/73fcc67/src/type.ts#L83)*
+*Defined in [type.ts:83](https://github.com/OctoD/ftts/blob/b8036e1/src/type.ts#L83)*
 
 **Type parameters:**
 

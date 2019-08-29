@@ -20,4 +20,4 @@
 
 • **BoolOperators**: *[BoolOperators](../interfaces/_operators_bool_.booloperators.md)* =  <BoolOperators>{}
 
-*Defined in [operators/Bool.ts:10](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/Bool.ts#L10)*
+*Defined in [operators/Bool.ts:10](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/Bool.ts#L10)*

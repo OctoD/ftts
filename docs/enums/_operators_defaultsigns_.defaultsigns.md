@@ -32,7 +32,7 @@
 
 • **And**: = "&&"
 
-*Defined in [operators/DefaultSigns.ts:2](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/DefaultSigns.ts#L2)*
+*Defined in [operators/DefaultSigns.ts:2](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/DefaultSigns.ts#L2)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • **Assign**: = "="
 
-*Defined in [operators/DefaultSigns.ts:3](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/DefaultSigns.ts#L3)*
+*Defined in [operators/DefaultSigns.ts:3](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/DefaultSigns.ts#L3)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **AssignDecrease**: = "-="
 
-*Defined in [operators/DefaultSigns.ts:4](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/DefaultSigns.ts#L4)*
+*Defined in [operators/DefaultSigns.ts:4](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/DefaultSigns.ts#L4)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 • **AssignIncrease**: = "+="
 
-*Defined in [operators/DefaultSigns.ts:5](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/DefaultSigns.ts#L5)*
+*Defined in [operators/DefaultSigns.ts:5](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/DefaultSigns.ts#L5)*
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 • **Decrease**: = "--"
 
-*Defined in [operators/DefaultSigns.ts:6](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/DefaultSigns.ts#L6)*
+*Defined in [operators/DefaultSigns.ts:6](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/DefaultSigns.ts#L6)*
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 • **Divide**: = "/"
 
-*Defined in [operators/DefaultSigns.ts:7](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/DefaultSigns.ts#L7)*
+*Defined in [operators/DefaultSigns.ts:7](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/DefaultSigns.ts#L7)*
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 • **DoubleQuestionMark**: = "??"
 
-*Defined in [operators/DefaultSigns.ts:8](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/DefaultSigns.ts#L8)*
+*Defined in [operators/DefaultSigns.ts:8](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/DefaultSigns.ts#L8)*
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 • **Equals**: = "=="
 
-*Defined in [operators/DefaultSigns.ts:9](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/DefaultSigns.ts#L9)*
+*Defined in [operators/DefaultSigns.ts:9](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/DefaultSigns.ts#L9)*
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 • **Increase**: = "++"
 
-*Defined in [operators/DefaultSigns.ts:10](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/DefaultSigns.ts#L10)*
+*Defined in [operators/DefaultSigns.ts:10](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/DefaultSigns.ts#L10)*
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 • **Minus**: = "-"
 
-*Defined in [operators/DefaultSigns.ts:11](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/DefaultSigns.ts#L11)*
+*Defined in [operators/DefaultSigns.ts:11](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/DefaultSigns.ts#L11)*
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 • **Multiply**: = "*"
 
-*Defined in [operators/DefaultSigns.ts:12](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/DefaultSigns.ts#L12)*
+*Defined in [operators/DefaultSigns.ts:12](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/DefaultSigns.ts#L12)*
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 • **NotEqual**: = "=!"
 
-*Defined in [operators/DefaultSigns.ts:13](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/DefaultSigns.ts#L13)*
+*Defined in [operators/DefaultSigns.ts:13](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/DefaultSigns.ts#L13)*
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 • **Or**: = "||"
 
-*Defined in [operators/DefaultSigns.ts:16](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/DefaultSigns.ts#L16)*
+*Defined in [operators/DefaultSigns.ts:16](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/DefaultSigns.ts#L16)*
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 • **Plus**: = "+"
 
-*Defined in [operators/DefaultSigns.ts:14](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/DefaultSigns.ts#L14)*
+*Defined in [operators/DefaultSigns.ts:14](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/DefaultSigns.ts#L14)*
 
 ___
 
@@ -144,7 +144,7 @@ ___
 
 • **Pow**: = "**"
 
-*Defined in [operators/DefaultSigns.ts:15](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/DefaultSigns.ts#L15)*
+*Defined in [operators/DefaultSigns.ts:15](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/DefaultSigns.ts#L15)*
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 • **QuestionMark**: = "?"
 
-*Defined in [operators/DefaultSigns.ts:17](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/DefaultSigns.ts#L17)*
+*Defined in [operators/DefaultSigns.ts:17](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/DefaultSigns.ts#L17)*
 
 ___
 
@@ -160,4 +160,4 @@ ___
 
 • **Root**: = "^"
 
-*Defined in [operators/DefaultSigns.ts:18](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/DefaultSigns.ts#L18)*
+*Defined in [operators/DefaultSigns.ts:18](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/DefaultSigns.ts#L18)*

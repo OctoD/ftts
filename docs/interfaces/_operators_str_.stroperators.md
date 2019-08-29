@@ -22,7 +22,7 @@
 
 • **concat**: *[Operator](_operator_.operator.md)‹string, string›*
 
-*Defined in [operators/Str.ts:6](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/Str.ts#L6)*
+*Defined in [operators/Str.ts:6](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/Str.ts#L6)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **repeat**: *[Operator](_operator_.operator.md)‹string, string›*
 
-*Defined in [operators/Str.ts:7](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/Str.ts#L7)*
+*Defined in [operators/Str.ts:7](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/Str.ts#L7)*
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 • **split**: *[Operator](_operator_.operator.md)‹string, string›*
 
-*Defined in [operators/Str.ts:8](https://github.com/OctoD/ftts/blob/73fcc67/src/operators/Str.ts#L8)*
+*Defined in [operators/Str.ts:8](https://github.com/OctoD/ftts/blob/b8036e1/src/operators/Str.ts#L8)*
