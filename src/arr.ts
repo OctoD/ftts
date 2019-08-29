@@ -13,11 +13,14 @@ import {
   str,
   und,
   Fn,
-  char
+  char,
+  Bit,
+  bit
 } from "./primitives";
 
 export type Arr<T extends Type<any>> = Type<T[]>;
 export type CharArr = Arr<Char>;
+export type BitArr = Arr<Bit>;
 export type BoolArr = Arr<Bool>;
 export type ObjArr = Arr<Obj>;
 export type NumArr = Arr<Num>;
@@ -60,6 +63,7 @@ function mapToType<T>(
 //#endregion
 
 export const arr = Arr();
+export const bitarr = BitArr();
 export const chararr = CharArr();
 export const boolarr = BoolArr();
 export const objarr = ObjArr();
@@ -68,6 +72,14 @@ export const strarr = StrArr();
 
 export function Arr(value: any[] = []): Arr<Any> {
   return create("AnyArray", value.map(mapToType(Any())), ensureArrayAnd());
+}
+
+export function BitArr(value: number[] = []): Arr<Bit> {
+  return create(
+    "BitArray",
+    value.map(mapToType(bit)),
+    ensureArrayAnd(ensureAllOfType(bit))
+  );
 }
 
 export function BoolArr(value: boolean[] = []): Arr<Bool> {

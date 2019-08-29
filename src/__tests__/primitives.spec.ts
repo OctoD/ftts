@@ -7,7 +7,8 @@ import {
   Undefined,
   Bool,
   Any,
-  Char
+  Char,
+  Bit
 } from "../primitives";
 
 describe(`primitives`, () => {
@@ -16,6 +17,13 @@ describe(`primitives`, () => {
     expect(Any(false).value()).toStrictEqual(false);
     expect(Any("aa").value()).toEqual("aa");
     expect(Any(100).value()).toEqual(100);
+  });
+
+  test("Bit", () => {
+    expect(Bit().value()).toStrictEqual(0);
+    expect(Bit(1).value()).toStrictEqual(1);
+    expect(() => Bit(100)).toThrowError();
+    expect(() => Bit("asd" as any)).toThrowError();
   });
 
   test(`Char`, () => {

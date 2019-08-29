@@ -2,6 +2,7 @@ import { create, Type } from "./type";
 
 export type Any<T = any> = Type<T>;
 export type Bool = Type<boolean>;
+export type Bit = Type<number>;
 export type Char = Type<string>;
 export type Fn<
   T extends (...args: any[]) => any = (...args: any[]) => any
@@ -19,6 +20,14 @@ export function Any<T = any>(value: T = null as any): Type<T> {
 
 export function Bool(value: boolean = true): Type<boolean> {
   return create("boolean", value, value => typeof value === "boolean");
+}
+
+export function Bit(value: number = 0): Type<number> {
+  return create(
+    "bit",
+    value,
+    value => typeof value === "number" && (value === 0 || value === 1)
+  );
 }
 
 export function Char(value: string = " "): Type<string> {
@@ -72,6 +81,7 @@ export function Undefined(): Type<undefined> {
 
 export const any = Any();
 export const bool = Bool();
+export const bit = Bit();
 export const char = Char();
 export const fn = Fn(() => void 0);
 export const nil = Null();
