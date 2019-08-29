@@ -1,19 +1,19 @@
 import { num } from "./primitives";
 import { impl, create } from "./trait";
 
-export const INT8_MIN = -128;
-export const INT8_MAX = 127;
-export const INT16_MIN = -32_768;
-export const INT16_MAX = 32_767;
-export const INT32_MIN = -2_147_483_648;
-export const INT32_MAX = 2_147_483_647;
-
 export const UINT8_MIN = 0;
 export const UINT8_MAX = 256;
 export const UINT16_MIN = 0;
 export const UINT16_MAX = 65_535;
 export const UINT32_MIN = 0;
 export const UINT32_MAX = 4_294_967_295;
+
+export const INT8_MAX = Math.floor(UINT8_MAX / 2);
+export const INT8_MIN = ~INT8_MAX;
+export const INT16_MAX = Math.floor(UINT16_MAX / 2);
+export const INT16_MIN = ~INT16_MAX;
+export const INT32_MAX = Math.floor(UINT32_MAX / 2);
+export const INT32_MIN = ~INT32_MAX;
 
 function createIntValidator(min: number, max: number, signed: boolean) {
   function checker(value: unknown): boolean {
