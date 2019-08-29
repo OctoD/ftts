@@ -1,6 +1,7 @@
 import { Type, create, update, same, equals } from "./type";
 import {
   Bool,
+  Char,
   Obj,
   Str,
   Num,
@@ -11,10 +12,12 @@ import {
   num,
   str,
   und,
-  Fn
+  Fn,
+  char
 } from "./primitives";
 
 export type Arr<T extends Type<any>> = Type<T[]>;
+export type CharArr = Arr<Char>;
 export type BoolArr = Arr<Bool>;
 export type ObjArr = Arr<Obj>;
 export type NumArr = Arr<Num>;
@@ -57,6 +60,7 @@ function mapToType<T>(
 //#endregion
 
 export const arr = Arr();
+export const chararr = CharArr();
 export const boolarr = BoolArr();
 export const objarr = ObjArr();
 export const numarr = NumArr();
@@ -71,6 +75,14 @@ export function BoolArr(value: boolean[] = []): Arr<Bool> {
     "BoolArray",
     value.map(mapToType(bool)),
     ensureArrayAnd(ensureAllOfType(bool))
+  );
+}
+
+export function CharArr(value: string[] = []): Arr<Char> {
+  return create(
+    "CharArray",
+    value.map(mapToType(char)),
+    ensureArrayAnd(ensureAllOfType(char))
   );
 }
 

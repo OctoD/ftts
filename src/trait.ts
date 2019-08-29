@@ -26,7 +26,7 @@ export function impl<T, U extends Trait<T>>(
     ]) as typeof type & U;
 }
 
-function isTrait(arg: unknown): arg is Trait {
+export function isTrait(arg: unknown): arg is Trait {
   if (typeof arg !== "object") {
     return false;
   }

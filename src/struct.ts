@@ -1,4 +1,4 @@
-import { TryCatch, Ok } from "tiinvo";
+import { TryCatch } from "tiinvo";
 import { StrArr } from "./arr";
 import { Obj, Str } from "./primitives";
 import * as type from "./type";

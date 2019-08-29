@@ -1,4 +1,14 @@
-import { Str, Num, Fn, Obj, Null, Undefined, Bool, Any } from "../primitives";
+import {
+  Str,
+  Num,
+  Fn,
+  Obj,
+  Null,
+  Undefined,
+  Bool,
+  Any,
+  Char
+} from "../primitives";
 
 describe(`primitives`, () => {
   test(`Any`, () => {
@@ -6,6 +16,13 @@ describe(`primitives`, () => {
     expect(Any(false).value()).toStrictEqual(false);
     expect(Any("aa").value()).toEqual("aa");
     expect(Any(100).value()).toEqual(100);
+  });
+
+  test(`Char`, () => {
+    expect(Char().value()).toStrictEqual(" ");
+    expect(Char("a").value()).toStrictEqual("a");
+    expect(() => Char("aa")).toThrowError();
+    expect(() => Char(123 as any)).toThrowError();
   });
 
   test(`Bool`, () => {

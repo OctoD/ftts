@@ -2,6 +2,7 @@ import { create, Type } from "./type";
 
 export type Any<T = any> = Type<T>;
 export type Bool = Type<boolean>;
+export type Char = Type<string>;
 export type Fn<
   T extends (...args: any[]) => any = (...args: any[]) => any
 > = Type<T>;
@@ -18,6 +19,14 @@ export function Any<T = any>(value: T = null as any): Type<T> {
 
 export function Bool(value: boolean = true): Type<boolean> {
   return create("boolean", value, value => typeof value === "boolean");
+}
+
+export function Char(value: string = " "): Type<string> {
+  return create(
+    "char",
+    value,
+    value => typeof value === "string" && value.length === 1
+  );
 }
 
 export function Fn<Fn extends (...args: any[]) => any>(value: Fn): Type<Fn> {
@@ -63,6 +72,7 @@ export function Undefined(): Type<undefined> {
 
 export const any = Any();
 export const bool = Bool();
+export const char = Char();
 export const fn = Fn(() => void 0);
 export const nil = Null();
 export const num = Num();
