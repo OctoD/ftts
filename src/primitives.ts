@@ -14,14 +14,36 @@ export type Num = Type<number>;
 export type Str = Type<string>;
 export type Undefined = Type<undefined>;
 
+/**
+ *
+ *
+ * @export
+ * @template T
+ * @param {T} [value=null as any]
+ * @returns {Type<T>}
+ */
 export function Any<T = any>(value: T = null as any): Type<T> {
   return create("any", value);
 }
 
+/**
+ *
+ *
+ * @export
+ * @param {boolean} [value=true]
+ * @returns {Type<boolean>}
+ */
 export function Bool(value: boolean = true): Type<boolean> {
   return create("boolean", value, value => typeof value === "boolean");
 }
 
+/**
+ *
+ *
+ * @export
+ * @param {number} [value=0]
+ * @returns {Type<number>}
+ */
 export function Bit(value: number = 0): Type<number> {
   return create(
     "bit",
@@ -30,6 +52,13 @@ export function Bit(value: number = 0): Type<number> {
   );
 }
 
+/**
+ *
+ *
+ * @export
+ * @param {string} [value=" "]
+ * @returns {Type<string>}
+ */
 export function Char(value: string = " "): Type<string> {
   return create(
     "char",
@@ -38,10 +67,25 @@ export function Char(value: string = " "): Type<string> {
   );
 }
 
+/**
+ *
+ *
+ * @export
+ * @template Fn
+ * @param {Fn} value
+ * @returns {Type<Fn>}
+ */
 export function Fn<Fn extends (...args: any[]) => any>(value: Fn): Type<Fn> {
   return create("function", value, value => typeof value === "function");
 }
 
+/**
+ *
+ *
+ * @export
+ * @param {object} [value={}]
+ * @returns {Type<object>}
+ */
 export function Obj(value: object = {}): Type<object> {
   return create(
     "object",
@@ -50,10 +94,24 @@ export function Obj(value: object = {}): Type<object> {
   );
 }
 
+/**
+ *
+ *
+ * @export
+ * @returns {Type<null>}
+ */
 export function Null(): Type<null> {
   return create("null", null, value => value === null);
 }
 
+/**
+ *
+ *
+ * @export
+ * @template U
+ * @param {Type<U>} type
+ * @returns {(Type<U | null>)}
+ */
 export function Nullable<U>(type: Type<U>): Type<U | null> {
   const name = ["null", type.name()].join(".");
   return create(
@@ -63,6 +121,13 @@ export function Nullable<U>(type: Type<U>): Type<U | null> {
   );
 }
 
+/**
+ *
+ *
+ * @export
+ * @param {number} [value=0]
+ * @returns {Type<number>}
+ */
 export function Num(value: number = 0): Type<number> {
   return create(
     "number",
@@ -71,10 +136,23 @@ export function Num(value: number = 0): Type<number> {
   );
 }
 
+/**
+ *
+ *
+ * @export
+ * @param {string} [value=""]
+ * @returns {Type<string>}
+ */
 export function Str(value: string = ""): Type<string> {
   return create("string", value, value => typeof value === "string");
 }
 
+/**
+ *
+ *
+ * @export
+ * @returns {Type<undefined>}
+ */
 export function Undefined(): Type<undefined> {
   return create("undefined", undefined, value => value === undefined);
 }

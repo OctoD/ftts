@@ -2,6 +2,13 @@ export type TypeBuilder<T> = (arg?: T) => Type<T>;
 export type TypeChecker<Value> = (arg: Value) => boolean;
 export type TypeDecorator = <T>(type: Type<T>) => Type<T>;
 
+/**
+ *
+ *
+ * @export
+ * @interface Type
+ * @template Value
+ */
 export interface Type<Value> {
   check(value: unknown): boolean;
   checker(): TypeChecker<unknown>;
@@ -13,6 +20,18 @@ export interface Type<Value> {
 
 const automaticCheck = () => true;
 
+/**
+ *
+ *
+ * @export
+ * @template Value
+ * @param {string} typename
+ * @param {Value} typevalue
+ * @param {TypeChecker<unknown>} [typechecker=automaticCheck]
+ * @param {string} [id=Math.floor(Math.random() * Date.now() * 0xffffff).toString(12)]
+ * @param {TypeDecorator[]} [decorators=[]]
+ * @returns {Type<Value>}
+ */
 export function create<Value>(
   typename: string,
   typevalue: Value,
@@ -50,6 +69,15 @@ export function create<Value>(
   return t;
 }
 
+/**
+ *
+ *
+ * @export
+ * @template T
+ * @param {Type<T>} type
+ * @param {Type<unknown>} equalsTo
+ * @returns {equalsTo is Type<T>}
+ */
 export function equals<T>(
   type: Type<T>,
   equalsTo: Type<unknown>
@@ -57,6 +85,13 @@ export function equals<T>(
   return type.name() === equalsTo.name();
 }
 
+/**
+ *
+ *
+ * @export
+ * @param {unknown} value
+ * @returns {value is Type<unknown>}
+ */
 export function isType(value: unknown): value is Type<unknown> {
   if (typeof value !== "object") {
     return false;
@@ -76,10 +111,27 @@ export function isType(value: unknown): value is Type<unknown> {
   );
 }
 
+/**
+ *
+ *
+ * @export
+ * @param {Type<any>} left
+ * @param {Type<any>} right
+ * @returns {left is typeof right}
+ */
 export function same(left: Type<any>, right: Type<any>): left is typeof right {
   return left.id() === right.id() && left.name() === right.name();
 }
 
+/**
+ *
+ *
+ * @export
+ * @template T
+ * @param {Type<T>} type
+ * @param {T} typevalue
+ * @returns {(Type<T> | never)}
+ */
 export function update<T>(type: Type<T>, typevalue: T): Type<T> | never {
   const typename = type.name();
   const typechecker = type.checker();
@@ -95,6 +147,14 @@ export function update<T>(type: Type<T>, typevalue: T): Type<T> | never {
   );
 }
 
+/**
+ *
+ *
+ * @param {string} typename
+ * @param {unknown} typevalue
+ * @param {TypeChecker<unknown>} typechecker
+ * @returns {(void | never)}
+ */
 function throwIfUnacceptable(
   typename: string,
   typevalue: unknown,
