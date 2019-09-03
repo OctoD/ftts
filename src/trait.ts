@@ -25,11 +25,23 @@ export type TraitInvokable<T extends Type<K>, U extends Trait<K>, K> = (
  * @returns {T}
  */
 export function create<T extends Trait<U>, U>(trait: T): T {
-  if (!isTrait(trait)) {
+  ensureTrait(trait);
+  return trait;
+}
+
+/**
+ *
+ *
+ * @export
+ * @param {unknown} maybeTrait
+ * @returns {maybeTrait is Trait}
+ */
+export function ensureTrait(maybeTrait: unknown): maybeTrait is Trait {
+  if (!isTrait(maybeTrait)) {
     throw new TypeError(`trait is not a Trait`);
   }
 
-  return trait;
+  return true;
 }
 
 /**
