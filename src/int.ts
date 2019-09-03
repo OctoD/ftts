@@ -2,7 +2,7 @@ import { num } from "./primitives";
 import { impl, create } from "./trait";
 
 export const UINT8_MIN = 0;
-export const UINT8_MAX = 256;
+export const UINT8_MAX = 255;
 export const UINT16_MIN = 0;
 export const UINT16_MAX = 65_535;
 export const UINT32_MIN = 0;
